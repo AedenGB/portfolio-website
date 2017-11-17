@@ -10,7 +10,7 @@ Jinja2==2.9.6
 #Landscape-Client==16.03
 Markdown==2.4
 MarkupSafe==1.0
-PAM==0.4.2
+#PAM==0.4.2
 PyYAML==3.10
 Pygments==1.6
 SQLAlchemy==1.1.14
