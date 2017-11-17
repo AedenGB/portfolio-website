@@ -7,7 +7,7 @@ Flask-Mail==0.9.1
 Flask-OpenID==1.2.5
 Flask-WTF==0.14.2
 Jinja2==2.9.6
-Landscape-Client==16.03
+#Landscape-Client==16.03
 Markdown==2.4
 MarkupSafe==1.0
 PAM==0.4.2
