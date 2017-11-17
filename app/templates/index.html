@@ -1,0 +1,201 @@
+<html id = 'html'>
+  <head>
+    <title>6007X Robotics</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+    <script src="{{url_for('static', filename='plugins/jquery.scrollTo.min.js')}}"></script>
+    <script src="{{url_for('static', filename='plugins/jquery.localScroll.min.js')}}"></script>
+
+    <script>
+      $(document).ready(function(){
+          $.localScroll({
+             target:'body',
+             duration: 900
+          });
+        });
+    </script>
+
+    <script src="{{url_for('static', filename='javascript/index.js')}}"></script>
+    </head>
+  <body>
+
+    <div id = "menu-bar">
+      <img id = "title" src="https://fontmeme.com/permalink/171003/b035082577192768f6f92bcdc57675ba.png" alt="blade-runner-font" border="0">
+      <img id = "rolling_logo" src="{{url_for('static', filename='images/rolling logo.png')}}">
+      <a href = "#About-Us">
+      </a>
+      <div  id = "contact-us">
+        <b class = "text">Contact Us</b>
+      </div>
+        <div class = "container">
+          <div class = "heading-links-container">
+            <a class = "text heading-links" href = "#About-Us">About Us</a>
+          </div><div class = "heading-links-container">
+            <a class = "text heading-links" href = "#Seasons">Seasons</a>
+          </div><div class = "heading-links-container">
+            <a class = "text heading-links" href = "#Current-Members">Current Members</a>
+          </div><div class = "heading-links-container">
+            <a class = "text heading-links" href = "#Alliance">8762 Alliance</a>
+          </div><div class = "heading-links-container">
+            <a class = "text heading-links" href = "http://rollingrobots.com">Rolling Robots</a>
+          </div>
+          <div class = "text" id = "theme-button">
+            Light Theme
+          </div>
+        </div>
+      </div>
+
+      <div id = "contact-popup">
+
+        <p class = "popup text">
+          Interested in advice, mentorship, or have questions? Don't hesitate to ask.
+        </p>
+        <p class = "popup text">
+          6007xqf@gmail.com
+        </p>
+        <a id="foxyform_embed_link_900439" href="http://www.foxyform.com/"></a>
+        <script type="text/javascript">
+        (function(d, t){
+           var g = d.createElement(t),
+               s = d.getElementsByTagName(t)[0];
+           g.src = "http://www.foxyform.com/js.php?id=900439&sec_hash=85d6ccea0c9&width=350px";
+           s.parentNode.insertBefore(g, s);
+        }(document, "script"));
+        </script>
+      </div>
+      <div id = "grey"></div>
+
+      <a id = 'anchor1' class = "anchors" name="About-Us">hello</a>
+      <div class="headers"><div class = "heading-links-container">
+        <a class = "text heading-links" href = "#About-Us">About Us</a></div>
+      </div>
+      <div class = "text-container">
+        <div class = "video-containers">
+          <iframe class = 'videos' width="560" height="315" src="https://www.youtube.com/embed/XSXmZhB-8sU?rel=0&amp;fs=0&amp;showinfo=0" frameborder="0" allowfullscreen>hello</iframe>
+        </div>
+        <p class = "body-text text">6007 was started by two interested middle schoolers at the <a class = "links" href = "https://www.millikanmiddleschool.org/">Millikan Science Acadedmy<a/>. They knew practically nothing about vex, but with the help of some manuals and parents,
+          the team enjoyed some moderate sucess in <a  href = "https://www.youtube.com/watch?v=N-ehrKSYfjkVex" class = "links"> Sack Attack<a/>. Enboldened, they added four additional team members
+          the following year and made it to the MS World Championships, getting eliminated in the quarterfinals. The next year, the team split into three, due to some administrative issues.
+          The number 6007 was taken by one of the initial two students, Aeden Gasser-Brennan. Aeden, along with Ben Adelstein, a beginner who was brought onto the team that year,
+          made one of the better middle school <a class = "links" href = "https://www.youtube.com/watch?v=PJ-5H3JVtPs">Skyrise<a/> robots. However, due to a freak accident at worlds,
+          they went from first ranked to not making eliminations at worlds that year. During <a class = "links" href = "https://www.youtube.com/watch?v=A8daR6qBw3M">Nothing But Net<a/>, 6007's
+          first High School year, Aeden went esentially solo, but was not able to do very well. Last year, in <a class = "links" href = "https://www.youtube.com/watch?v=0t2zstQ84Tw">Starstruck<a/>, Aeden and Ben reunited
+          and were able to rank 5th in the world in High School. This year, 6007 (now officially 6007X) hopes to replicate this sucess with our new members, Ethan and John, and as a
+          <a class = "links" href = "https://rollingrobots.com">Rolling Robots<a/> team.
+        </p>
+      </div>
+
+
+      <a id = 'anchor2' class = "anchors" name="Seasons">hello</a>
+      <div class="headers"><div class = "heading-links-container">
+        <a class = "text heading-links" href = "#Seasons">Seasons</a></div>
+      </div>
+      <div class = " text text-container">
+        <p class = "body-text text"> So far this season, we have tried multiple designs and made quite a lot of progress. However, we have not been totally satisfied with any of our designs and we are currently building a foruth robot.
+        </p>
+      </div>
+
+      <div class="headers"><div class = "heading-links-container">
+        <a class = "text heading-links">Recent Awards</a></div>
+      </div>
+
+      <div class = " text text-container">
+        <div id = "award1" class = "awards body-text text">{{recent_awards[0]|safe}}</div>
+        <div id = "award2" class = "awards body-text text">{{recent_awards[1]|safe}}</div>
+        <div id = "award3" class = "awards body-text text">{{recent_awards[2]|safe}}</div>
+        <div id = "award4" class = "awards body-text text">{{recent_awards[3]|safe}}</div>
+        <div id = "award5" class = "awards body-text text">{{recent_awards[4]|safe}}</div>
+        <div id = "links_to_db">
+          <a class = "text links" href = "https://vexdb.io/">vexDB</a> •
+          <a class = "text links" href = "https://vexdb.io/teams/view/6007X">6007X</a> •
+          <a class = "text links" href = "https://vexdb.io/teams/view/6007">6007<a/>
+        </div>
+      </div>
+
+      <div class = " text text-container">
+        <div class = "video-containers">
+          <iframe class = 'videos' width="560" height="315" src="https://www.youtube.com/embed/v4IcV4s2VcY?rel=0&amp;fs=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <p class = "body-text text">Last year, by far the most sucessful year of 6007, in the game <a class = "links" href = "https://www.youtube.com/watch?v=0t2zstQ84Tw">Vex Starstruck<a/>, Aeden and Ben reunited
+          and were able to rank 5th in the world in High School.
+        </p>
+        <div class = "video-containers">
+          <iframe class = 'videos' width="560" height="315" src="https://www.youtube.com/embed/XSXmZhB-8sU?rel=0&amp;fs=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <p class = "body-text text">In 6007's first year of high school competition, <a class = "links" href = "https://www.youtube.com/watch?v=A8daR6qBw3M">Nothing But Net<a/>, the team struggled with a cortex failure at states and was unable to qualify for worlds.</p>
+
+        <div class = "video-containers">
+          <iframe class = 'videos' width="560" height="315" src="https://www.youtube.com/embed/8zsNPf2fyVU?rel=0&amp;fs=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <p class = "body-text text">In 2015, <a class = "links" href = "https://www.youtube.com/watch?v=PJ-5H3JVtPs">Skyrise<a/>,the team made it to worlds and went undefeated for the first 5 matches, the only middle team to do so. However, an untimely fall rendered the robot almost useless and the team lost three of their remaining matches, barely missing the cutoff for elimination.</p>
+
+        <div class = "video-containers">
+          <iframe class = 'videos' width="560" height="315" src="https://www.youtube.com/embed/OFA-4lDUanE?rel=0&amp;fs=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <p class = "body-text text">In 2014, 6007's first year of serious competition, <a class = "links" href = "https://www.youtube.com/watch?v=gsq2qjjNwPU">Toss Up<a/>, the team made it to worlds quarterfinals but was eliminated by the eventual world champions.</p>
+
+      </div>
+
+
+      <a id = 'anchor3' class = "anchors" name="Current-Members">hello</a>
+      <div class="headers"><div class = "heading-links-container">
+        <a class = "text heading-links" href = "#Current-Members">Current Members</a></div>
+      </div>
+      <div class = "text-container">
+
+        <div class = "member-profile">
+          <div class = "member-picture-container" data-tilt><img class = "member-picture" src = "http://www.digitalpedagogylab.com/hybridped/wp-content/uploads/sites/12/2016/01/slu-mugshot-square-bw.jpg" />
+          </div>
+          <p class = "body-text text member-bio">
+            Hi, I'm Aeden! This is my 6th year of Vex competition. As the most experienced member on the team, I serve the role of team captain, programmer, and lead builder/designer (and website maker).
+          </p>
+        </div>
+
+        <div class = "member-profile">
+          <div class = "member-picture-container" data-tilt><img class = "member-picture" src = "data:image/png;base64,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" />
+          </div>
+          <p class = "body-text text member-bio">
+            Hi, I'm Ethan! This is my second year of vex. Last year I was on my school's team, but I decided to leave, looking for a more competitive team. I am focused mainly on building but I am also starting programming.
+          </p>
+        </div>
+
+        <div class = "member-profile">
+          <div class = "member-picture-container" data-tilt><img class = "member-picture" src = "data:image/png;base64,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" />
+          </div>
+          <p class = "body-text text member-bio">
+            Hi, I'm John! I have a pretty similar story to Ethan (we were both on the same school team last year). I am also mainly focused on building but I am also in charge of the engineering notebook.
+          </p>
+        </div>
+
+      </div>
+
+
+      <a id = 'anchor4' class = "anchors" name="Alliance">hello</a>
+      <div class="headers"><div class = "heading-links-container">
+        <a class = "text heading-links" href = "#Alliance">8762 Alliance</a></div>
+      </div>
+      <div class = "text-container">
+
+        <p class = "body-text text">The 8762 Alliance is an alliance that has been formed by some of the top teams in California, including the 8000 teams, team 62A, team 6007X, and the 7700 rolling robots teams. Every included team has won their division at worlds at least once, with the exception of 62, who was skills champion in 2015. The purpose of this is alliance is to share ideas and  to work together to improve them.
+        </p>
+      </div>
+
+
+      <div id = "footer">
+        <p class = "text">© 2017 Team 6007X</p>
+      </div>
+      <script src="{{url_for('static', filename='plugins/tilt.jquery.js')}}"></script>
+      <script>
+        $('.member-picture-container').tilt({
+            scale: 1.05,
+            glare: true,
+            maxGlare: 0.2
+        });
+      </script>
+    </body>
+</html>
