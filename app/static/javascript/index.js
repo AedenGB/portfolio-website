@@ -39,27 +39,23 @@ $(document).ready(function(){
         }
       }
     });
-    //prevents one from opening and then other immediately closing
-    var go = true;
     $("#contact-us").on( "click", function(){
-      if($("#contact-popup").css("visibility")==="collapse"&&go){
+      if($("#contact-popup").css("visibility")==="collapse"){
         $("html:not(#contact-popup)").css("opacity","0.5");
         $("#contact-popup").css("visibility","visible");
         $("#grey").css("visibility","visible");
         go = false;
         return;
       }
-      go = true;
     });
 
-    $("html:not(#contact-popup)").on( "click", function(){
-      if($("#contact-popup").css("visibility")==="visible"&&go){
+    $("#grey").on( "click", function(){
+      if($("#contact-popup").css("visibility")==="visible"){
         $("html:not(#contact-popup)").css("opacity","1");
         $("#contact-popup").css("visibility","collapse");
         $("#grey").css("visibility","collapse");
         return;
       }
-      go = true;
     });
 });
 
