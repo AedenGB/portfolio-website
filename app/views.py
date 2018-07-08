@@ -17,9 +17,4 @@ def index():
         string = '<a class = "links_normal text" href = "https://vexdb.io/events/view/'+str(awards_list[i][u'sku'])+'?t=awards">'+string+"</a>"
         recent_awards[i] = string.replace("(VRC/VEXU)","")
         i+=1
-
-    user = {'nickname': 'Miguel'}  # fake user
-    return render_template('index.html',
-                           title='Home',
-                           user=user,
-                           recent_awards=recent_awards)
+    return render_template('index.html', recent_awards=recent_awards)
