@@ -5,7 +5,7 @@ import json
 
 
 @app.route('/')
-@app.route('/index')
+#@app.route('/index')
 def index():
     response_x = requests.get("https://api.vexdb.io/v1/get_awards?team=6007X&limit_number=5")
     response_old = requests.get("https://api.vexdb.io/v1/get_awards?team=6007&limit_number=5")
