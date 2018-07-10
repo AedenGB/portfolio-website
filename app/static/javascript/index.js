@@ -3,6 +3,7 @@ $(document).ready(function(){
     $('html').fadeIn(1000);
     $('#theme-button').on( "click", function(){
       if($('#menu-bar').css('background-color')==="rgb(17, 17, 17)"){
+        window.location.hash = "#light"
         $('#theme-button').text("Dark Theme");
         $('#menu-bar').css('background',"white");
         $('html').css('background',"white");
@@ -20,6 +21,7 @@ $(document).ready(function(){
         }
       }
       else{
+        window.location.hash = "#dark"
         $('.awards').css("background","grey");
         $('#theme-button').text("Light Theme");
         $('#menu-bar').css('background',"#111");
