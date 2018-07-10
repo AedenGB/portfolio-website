@@ -27,7 +27,6 @@ $(document).ready(function(){
         $('.text').css('color',"white");
         $('.links').css('color',"white");
         $('#title').css("color","blue");
-        $('.member-profile').css("box-shadow","4px 4px 3px #666");
         $('.member-profile').css("box-shadow","0 0 0");
         $('#contact-popup').css("background","#222");
         $('#contact-popup').css("box-shadow","0 0 0 #000");

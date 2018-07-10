@@ -104,7 +104,7 @@ html{
   opacity: 0.75;
 }
 #rolling_logo{
-  visibility: hidden;
+  visibility: collapse;
   height:60px;
   width:60px;
   left:20px;
@@ -156,10 +156,10 @@ html{
 
 
 .heading-links-container {
-	display: inline-block;
-	position: relative;
+  display: inline-block;
+  position: relative;
   float: left;
-	padding-bottom: 3px;
+  padding-bottom: 3px;
   width:inline-block;
   margin-left: 50px;
   margin-right: 50px;
@@ -173,18 +173,18 @@ html{
   margin:auto;
   size:inline-block;
   display: inline;
-	padding-bottom: 3px;
+  padding-bottom: 3px;
   font-size: 20px;
   font-weight: bold;
 }
 .heading-links:after {
   position: relative;
   content: '';
-	display: block;
+  display: block;
   margin: auto;
-	margin-top: 3;
-	height: 5px;
-	width: 0;
+  margin-top: 3;
+  height: 5px;
+  width: 0;
   transition: 0.5s  cubic-bezier(0.19, 1, 0.22, 1);
   opacity: 0.5;
   background: #2566C9;
@@ -291,7 +291,7 @@ html{
   top:-4px;
 }
 #anchor2{
-  top:260px;
+  top:110px;
 }
 #anchor3{
   top:48px;

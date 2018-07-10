@@ -25,7 +25,7 @@
   <body>
 
     <div id = "menu-bar">
-      <img id = "title" src="https://fontmeme.com/permalink/171003/b035082577192768f6f92bcdc57675ba.png" alt="blade-runner-font" border="0">
+      <a href = "#About-Us"><img id = "title" src="https://fontmeme.com/permalink/171003/b035082577192768f6f92bcdc57675ba.png" alt="blade-runner-font" border="0"></a>
       <img id = "rolling_logo" src="{{url_for('static', filename='images/rolling logo.png')}}">
       <a href = "#About-Us">
       </a>
@@ -38,7 +38,7 @@
           </div><div class = "heading-links-container">
             <a class = "text heading-links" href = "#Seasons">Seasons</a>
           </div><div class = "heading-links-container">
-            <a class = "text heading-links" href = "#Current-Members">Current Members</a>
+            <a class = "text heading-links" href = "#Members">Members</a>
           </div><div class = "heading-links-container">
             <a class = "text heading-links" href = "#Alliance">8762 Alliance</a>
           </div><div class = "heading-links-container">
@@ -78,15 +78,7 @@
         <div class = "video-containers">
           <iframe class = 'videos' width="560" height="315" src="https://www.youtube.com/embed/XSXmZhB-8sU?rel=0&amp;fs=0&amp;showinfo=0" frameborder="0" allowfullscreen>hello</iframe>
         </div>
-        <p class = "body-text text">6007 was started by two interested middle schoolers at the <a class = "links" href = "https://www.millikanmiddleschool.org/">Millikan Science Acadedmy<a/>. They knew practically nothing about vex, but with the help of some manuals and parents,
-          the team enjoyed some moderate sucess in <a  href = "https://www.youtube.com/watch?v=N-ehrKSYfjkVex" class = "links"> Sack Attack<a/>. Enboldened, they added four additional team members
-          the following year and made it to the MS World Championships, getting eliminated in the quarterfinals. The next year, the team split into three, due to some administrative issues.
-          The number 6007 was taken by one of the initial two students, Aeden Gasser-Brennan. Aeden, along with Ben Adelstein, a beginner who was brought onto the team that year,
-          made one of the better middle school <a class = "links" href = "https://www.youtube.com/watch?v=PJ-5H3JVtPs">Skyrise<a/> robots. However, due to a freak accident at worlds,
-          they went from first ranked to not making eliminations at worlds that year. During <a class = "links" href = "https://www.youtube.com/watch?v=A8daR6qBw3M">Nothing But Net<a/>, 6007's
-          first High School year, Aeden went esentially solo, but was not able to do very well. Last year, in <a class = "links" href = "https://www.youtube.com/watch?v=0t2zstQ84Tw">Starstruck<a/>, Aeden and Ben reunited
-          and were able to rank 5th in the world in High School. This year, 6007 (now officially 6007X) hopes to replicate this sucess with our new members, Ethan and John, and as a
-          <a class = "links" href = "https://rollingrobots.com">Rolling Robots<a/> team.
+        <p class = "body-text text">6007 began in 2013, at <a class = "links" href = "https://www.millikanmiddleschool.org/">Millikan Science Acadedmy<a/>.  We have been competing since <a  href = "https://www.youtube.com/watch?v=N-ehrKSYfjkVex" class = "links"> Sack Attack<a/> and have competed at worlds four times, during <a class = "links" href = "https://www.youtube.com/watch?v=gsq2qjjNwPU">Toss Up<a/>, <a class = "links" href = "https://www.youtube.com/watch?v=PJ-5H3JVtPs">Skyrise<a/>, <a class = "links" href = "https://www.youtube.com/watch?v=0t2zstQ84Tw">Starstruck<a/>, and <a class = "links" href = "https://www.youtube.com/watch?v=1Yo_mlR1VJU">In the Zone<a/>. We are best known for winning the Science Division in 2017, and for winning the California State Championship twice. 6007 is also devoted to giving back to the community, providing mentorship to younger teams, and remaining available to answer teams’ questions.
         </p>
       </div>
 
@@ -95,8 +87,12 @@
       <div class="headers"><div class = "heading-links-container">
         <a class = "text heading-links" href = "#Seasons">Seasons</a></div>
       </div>
-      <div class = " text text-container">
-        <p class = "body-text text"> So far this season, we have tried multiple designs and made quite a lot of progress. However, we have not been totally satisfied with any of our designs and we are currently building a foruth robot.
+
+      <div class = "text-container">
+        <div class = "video-containers">
+          <iframe class = 'videos' width="560" height="315" src="https://www.youtube.com/embed/X7jy89NVId8?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <p class = "body-text text">In 2018, 6007X was able to placing 17 in the world in the <a class = "links" href = "https://vexdb.io/skills/VRC/In_The_Zone/Robot">Robot Skills Ranking<a/>, as well as coming in second in the <a class = "links" href = "https://www.youtube.com/watch?v=DS0BRlRDlnc">Promote Award Challenge<a/>.
         </p>
       </div>
 
@@ -105,6 +101,8 @@
       </div>
 
       <div class = " text text-container">
+
+
         <div id = "award1" class = "awards body-text text">{{recent_awards[0]|safe}}</div>
         <div id = "award2" class = "awards body-text text">{{recent_awards[1]|safe}}</div>
         <div id = "award3" class = "awards body-text text">{{recent_awards[2]|safe}}</div>
@@ -121,8 +119,7 @@
         <div class = "video-containers">
           <iframe class = 'videos' width="560" height="315" src="https://www.youtube.com/embed/v4IcV4s2VcY?rel=0&amp;fs=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
         </div>
-        <p class = "body-text text">Last year, by far the most sucessful year of 6007, in the game <a class = "links" href = "https://www.youtube.com/watch?v=0t2zstQ84Tw">Vex Starstruck<a/>, Aeden and Ben reunited
-          and were able to rank 5th in the world in High School.
+        <p class = "body-text text">In 2017, by far the most sucessful year of 6007, in the game <a class = "links" href = "https://www.youtube.com/watch?v=0t2zstQ84Tw">Vex Starstruck<a/>, was able to rank 5th in the world in High School.
         </p>
         <div class = "video-containers">
           <iframe class = 'videos' width="560" height="315" src="https://www.youtube.com/embed/XSXmZhB-8sU?rel=0&amp;fs=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -142,9 +139,9 @@
       </div>
 
 
-      <a id = 'anchor3' class = "anchors" name="Current-Members">hello</a>
+      <a id = 'anchor3' class = "anchors" name="Members">hello</a>
       <div class="headers"><div class = "heading-links-container">
-        <a class = "text heading-links" href = "#Current-Members">Current Members</a></div>
+        <a class = "text heading-links" href = "#Members">Members</a></div>
       </div>
       <div class = "text-container">
 
@@ -160,7 +157,7 @@
           <div class = "member-picture-container" data-tilt><img class = "member-picture" src = "http://www.digitalpedagogylab.com/hybridped/wp-content/uploads/sites/12/2016/01/slu-mugshot-square-bw.jpg" />
           </div>
           <p class = "body-text text member-bio">
-            Hi, I'm Aeden! This is my 6th year of Vex competition. As the most experienced member on the team, I serve the role of team captain, programmer, and lead builder/designer (and website maker).
+            Hi!  I’m Ben, and this is my 5th year of vex.  I worked alongside Aeden for my first few seasons as a builder, and after Starstruck I broke off and formed my own team. Now, I am the captain of team 6671X.
           </p>
         </div>
 
@@ -168,10 +165,10 @@
           <div class = "member-picture-container" data-tilt><img class = "member-picture" src = "http://www.digitalpedagogylab.com/hybridped/wp-content/uploads/sites/12/2016/01/slu-mugshot-square-bw.jpg" />
           </div>
           <p class = "body-text text member-bio">
-            Hi, I'm Aeden! This is my 6th year of Vex competition. As the most experienced member on the team, I serve the role of team captain, programmer, and lead builder/designer (and website maker).
+            Hi, I'm Ethan! This is my first year of Vex competition. As the least experienced member on the team, I serve the role of team coffee fetcher, forum troll, and pit manager. (and nothing else)
           </p>
         </div>
-        
+
       </div>
 
 
