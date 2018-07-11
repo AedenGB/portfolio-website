@@ -1,9 +1,6 @@
 $(document).ready(function(){
-    $('html').hide();
-    $('html').fadeIn(1000);
-    $('#theme-button').on( "click", function(){
-      if($('#menu-bar').css('background-color')==="rgb(17, 17, 17)"){
-        window.location.hash = "#light"
+    var setColors = function(){
+      if(window.location.hash == "#light"){
         $('#theme-button').text("Dark Theme");
         $('#menu-bar').css('background',"white");
         $('html').css('background',"white");
@@ -39,6 +36,18 @@ $(document).ready(function(){
           $('#menu-bar').css('box-shadow',"0 2px 6px #666");
         }
       }
+    }
+    setColors();
+    $('html').hide();
+    $('html').fadeIn(1000);
+    $('#theme-button').on( "click", function(){
+      if(window.location.hash == "#dark"){
+        window.location.hash = "#light";
+      }
+      else{
+        window.location.hash = "#dark"
+      }
+      setColors();
     });
     $("#contact-us").on( "click", function(){
       if($("#contact-popup").css("visibility")==="collapse"){
