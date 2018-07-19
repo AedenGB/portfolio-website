@@ -10,6 +10,8 @@ $(document).ready(function(){
         $('.member-profile').css("box-shadow","4px 4px 3px #999");
         $('#contact-popup').css("background","rgb(254,254,254)");
         $('#contact-popup').css("box-shadow","6px 6px 4px #999");
+        $('#all-awards-popup').css("background","rgb(254,254,254)");
+        $('#all-awards-popup').css("box-shadow","6px 6px 4px #999");
         $('.member-profile').css("background","lightGrey");
         $('.awards').css("box-shadow","6px 6px 4px #999");
         $('.awards').css("background","lightGrey");
@@ -29,6 +31,8 @@ $(document).ready(function(){
         $('.member-profile').css("box-shadow","0 0 0");
         $('#contact-popup').css("background","#222");
         $('#contact-popup').css("box-shadow","0 0 0 #000");
+        $('#all-awards-popup').css("background","#222");
+        $('#all-awards-popup').css("box-shadow","0 0 0 #000");
         $('.awards').css("box-shadow","0 0 0 #000");
         $('.member-profile').css("background","#666");
         $('.awards').css("background","grey");
@@ -49,20 +53,31 @@ $(document).ready(function(){
       }
       setColors();
     });
-    $("#contact-us").on( "click", function(){
-      if($("#contact-popup").css("visibility")==="collapse"){
-        $("html:not(#contact-popup)").css("opacity","0.5");
+
+    $("#contact-us").on( "click", function(){//if contact us button pressed, open popup
+        //$("html").css("opacity","0.5");
         $("#contact-popup").css("visibility","visible");
         $("#grey").css("visibility","visible");
-        go = false;
         return;
-      }
     });
 
-    $("#grey").on( "click", function(){
+    $("#all-awards").on( "click", function(){//if all awards button pressed, open popup
+        //$("html").css("opacity","0.5");
+        $("#all-awards-popup").css("visibility","visible");
+        $("#grey").css("visibility","visible");
+        return;
+    });
+
+    $("#grey").on( "click", function(){//if grey box clicked while popup open, close popup
       if($("#contact-popup").css("visibility")==="visible"){
-        $("html:not(#contact-popup)").css("opacity","1");
+        $("html").css("opacity","1");
         $("#contact-popup").css("visibility","collapse");
+        $("#grey").css("visibility","collapse");
+        return;
+      }
+      if($("#all-awards-popup").css("visibility")==="visible"){
+        $("html").css("opacity","1");
+        $("#all-awards-popup").css("visibility","collapse");
         $("#grey").css("visibility","collapse");
         return;
       }

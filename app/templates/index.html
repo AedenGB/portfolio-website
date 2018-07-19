@@ -29,7 +29,7 @@
       <img id = "rolling_logo" src="{{url_for('static', filename='images/rolling logo.png')}}">
       <a href = "#About-Us">
       </a>
-      <div  id = "contact-us">
+      <div id = "contact-us" class = "underline-button">
         <b class = "text">Contact Us</b>
       </div>
         <div class = "container">
@@ -68,6 +68,27 @@
         }(document, "script"));
         </script>
       </div>
+
+      <div id = "all-awards-popup">
+        <div class = "text all-awards-container">
+          <div class = "awards body-text text">{{recent_awards[0]|safe}}</div>
+          <div class = "awards body-text text">{{recent_awards[1]|safe}}</div>
+          <div class = "awards body-text text">{{recent_awards[2]|safe}}</div>
+          <div class = "awards body-text text">{{recent_awards[3]|safe}}</div>
+          <div class = "awards body-text text">{{recent_awards[4]|safe}}</div>
+          <div class = "awards body-text text">{{recent_awards[5]|safe}}</div>
+          <div class = "awards body-text text">{{recent_awards[6]|safe}}</div>
+          <div class = "awards body-text text">{{recent_awards[7]|safe}}</div>
+          <div class = "awards body-text text">{{recent_awards[8]|safe}}</div>
+          <div class = "awards body-text text">{{recent_awards[9]|safe}}</div>
+          <div class = "awards body-text text">{{recent_awards[10]|safe}}</div>
+          <div class = "awards body-text text">{{recent_awards[11]|safe}}</div>
+          <div class = "awards body-text text">{{recent_awards[12]|safe}}</div>
+          <div class = "awards body-text text">{{recent_awards[13]|safe}}</div>
+          <div class = "awards body-text text">{{recent_awards[14]|safe}}</div>
+        </div>
+      </div>
+
       <div id = "grey"></div>
 
       <a id = 'anchor1' class = "anchors" name="About-Us">hello</a>
@@ -78,7 +99,7 @@
         <div class = "video-containers">
           <iframe class = 'videos' width="560" height="315" src="https://www.youtube.com/embed/XSXmZhB-8sU?rel=0&amp;fs=0&amp;showinfo=0" frameborder="0" allowfullscreen>hello</iframe>
         </div>
-        <p class = "body-text text">6007 began in 2013, at <a class = "links" href = "https://www.millikanmiddleschool.org/">Millikan Science Acadedmy<a/>.  We have been competing since <a  href = "https://www.youtube.com/watch?v=N-ehrKSYfjkVex" class = "links"> Sack Attack<a/> and have competed at worlds four times, during <a class = "links" href = "https://www.youtube.com/watch?v=gsq2qjjNwPU">Toss Up<a/>, <a class = "links" href = "https://www.youtube.com/watch?v=PJ-5H3JVtPs">Skyrise<a/>, <a class = "links" href = "https://www.youtube.com/watch?v=0t2zstQ84Tw">Starstruck<a/>, and <a class = "links" href = "https://www.youtube.com/watch?v=1Yo_mlR1VJU">In the Zone<a/>. We are best known for winning the Science Division in 2017, and for winning the California State Championship twice. 6007 is also devoted to giving back to the community, providing mentorship to younger teams, and remaining available to answer teams’ questions.
+        <p class = "body-text text">6007 began in 2013, at <a class = "links" href = "https://www.millikanmiddleschool.org/">Millikan Science Academy<a/>.  We have been competing since <a  href = "https://www.youtube.com/watch?v=N-ehrKSYfjkVex" class = "links"> Sack Attack<a/> and have competed at worlds four times, during <a class = "links" href = "https://www.youtube.com/watch?v=gsq2qjjNwPU">Toss Up<a/>, <a class = "links" href = "https://www.youtube.com/watch?v=PJ-5H3JVtPs">Skyrise<a/>, <a class = "links" href = "https://www.youtube.com/watch?v=0t2zstQ84Tw">Starstruck<a/>, and <a class = "links" href = "https://www.youtube.com/watch?v=1Yo_mlR1VJU">In the Zone<a/>. We are best known for winning the Science Division in 2017, and for winning the California State Championship twice. 6007 is also devoted to giving back to the community, providing mentorship to younger teams, and remaining available to answer teams’ questions.
         </p>
       </div>
 
@@ -92,7 +113,7 @@
         <div class = "video-containers">
           <iframe class = 'videos' width="560" height="315" src="https://www.youtube.com/embed/X7jy89NVId8?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
-        <p class = "body-text text">In 2018, 6007X was able to placing 17 in the world in the <a class = "links" href = "https://vexdb.io/skills/VRC/In_The_Zone/Robot">Robot Skills Ranking<a/>, as well as coming in second in the <a class = "links" href = "https://www.youtube.com/watch?v=DS0BRlRDlnc">Promote Award Challenge<a/>.
+        <p class = "body-text text">In 2018, 6007X was able to place 17 in the world in the <a class = "links" href = "https://vexdb.io/skills/VRC/In_The_Zone/Robot">Robot Skills Ranking<a/>, as well as coming in second in the <a class = "links" href = "https://www.youtube.com/watch?v=DS0BRlRDlnc">Promote Award Challenge<a/>.
         </p>
       </div>
 
@@ -101,8 +122,6 @@
       </div>
 
       <div class = " text text-container">
-
-
         <div id = "award1" class = "awards body-text text">{{recent_awards[0]|safe}}</div>
         <div id = "award2" class = "awards body-text text">{{recent_awards[1]|safe}}</div>
         <div id = "award3" class = "awards body-text text">{{recent_awards[2]|safe}}</div>
@@ -113,9 +132,12 @@
           <a class = "text links" href = "https://vexdb.io/teams/view/6007X">6007X</a> •
           <a class = "text links" href = "https://vexdb.io/teams/view/6007">6007<a/>
         </div>
+        <p id = "all-awards" class = "underline-button body-text text">
+          all awards
+        </p>
       </div>
 
-      <div class = " text text-container">
+      <div class = "text text-container">
         <div class = "video-containers">
           <iframe class = 'videos' width="560" height="315" src="https://www.youtube.com/embed/v4IcV4s2VcY?rel=0&amp;fs=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
         </div>
