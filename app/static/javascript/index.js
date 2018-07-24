@@ -15,8 +15,8 @@ $(document).ready(function(){
         $('.member-profile').css("box-shadow","4px 4px 3px #999");
         $('#contact-popup').css("background","rgb(254,254,254)");
         $('#contact-popup').css("box-shadow","6px 6px 4px #999");
-        $('#all-awards-popup').css("background","rgb(254,254,254)");
-        $('#all-awards-popup').css("box-shadow","6px 6px 4px #999");
+        $('#all-awards-scrolling-div').css("background","rgb(254,254,254)");
+        $('#all-awards-scrolling-div').css("box-shadow","6px 6px 4px #999");
         $('.member-profile').css("background","lightGrey");
         $('.awards').css("box-shadow","6px 6px 4px #999");
         $('.awards').css("background","lightGrey");
@@ -36,8 +36,8 @@ $(document).ready(function(){
         $('.member-profile').css("box-shadow","0 0 0");
         $('#contact-popup').css("background","#222");
         $('#contact-popup').css("box-shadow","0 0 0 #000");
-        $('#all-awards-popup').css("background","#222");
-        $('#all-awards-popup').css("box-shadow","0 0 0 #000");
+        $('#all-awards-scrolling-div').css("background","#222");
+        $('#all-awards-scrolling-div').css("box-shadow","0 0 0 #000");
         $('.awards').css("box-shadow","0 0 0 #000");
         $('.member-profile').css("background","#666");
         $('.awards').css("background","grey");
@@ -63,8 +63,6 @@ $(document).ready(function(){
         $("#contact-popup").css("visibility","visible");
         $("#grey").css("visibility","visible");
         $('html').bind('mousewheel touchmove', lockScroll);
-        //$("body").css("overflow", "hidden");
-        //$("body").css("position, fixed")
         $("body").css("opacity","0.5");
         return;
     });
@@ -73,8 +71,6 @@ $(document).ready(function(){
         $("#all-awards-popup").css("visibility","visible");
         $("#grey").css("visibility","visible");
         $('body').bind('mousewheel touchmove', lockScroll);
-        //$("body").css("overflow", "hidden");
-        //$("body").css("position, fixed")
         $("body").css("opacity","0.5");
         return;
     });
@@ -83,8 +79,6 @@ $(document).ready(function(){
       if($("#contact-popup").css("visibility")==="visible"){
         $("body").css("opacity","1");
         $('html').unbind('mousewheel touchmove', lockScroll);
-        //$("body").css("overflow", "visible");
-        //$("body").css("position, static")
         $("#contact-popup").css("visibility","collapse");
         $("#grey").css("visibility","collapse");
         return;
@@ -92,8 +86,6 @@ $(document).ready(function(){
       if($("#all-awards-popup").css("visibility")==="visible"){
         $("body").css("opacity","1");
         $('body').unbind('mousewheel touchmove', lockScroll);
-        //$("body").css("overflow", "visible");
-        //$("body").css("position, static")
         $("#all-awards-popup").css("visibility","collapse");
         $("#grey").css("visibility","collapse");
         return;

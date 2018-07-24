@@ -5,6 +5,12 @@ html{
     -o-background-size: cover;
     background-size: cover;
 }
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
 .text-container{
   position: relative;
   top:90px;
@@ -12,13 +18,6 @@ html{
   width:700px;
 }
 
-
-.all-awards-container{
-  position: relative;
-  margin: auto;
-  width:700px;
-  top:30px;
-}
 .body-text{
   position: relative;
   font-weight: bold;
@@ -70,19 +69,37 @@ html{
   padding-bottom: 20px;
 }
 
+.all-awards-container{
+  position: relative;
+  margin: auto;
+  width:700px;
+  margin:auto;
+}
+
+.add-space-to-awards-popup{
+  height: 30px;
+  width: 700px;
+  display: inline-block;
+}
+
+#all-awards-scrolling-div{
+  width: 800px;
+  background: #222;
+  display: inline-block;
+  padding-top:30px;
+  padding-bottom: 30px;
+}
+
 #all-awards-popup{
+  height: 100%;
+  width: 800px;
   opacity: 1 !important;
   visibility:collapse;
   z-index: 13;
   position: fixed;
-  background: #222;
-  margin:auto;
-  height:80%/*inline-block*/;
-  width: 800px;
-  margin-top: -150px;
-  margin-left: -200px;
-  left:33%;
-  top:30%;
+  /*margin:auto;*/
+  top:0;
+  left:18%;
   text-align: center;
   font-weight: bolder;
   padding-bottom: 20px;
