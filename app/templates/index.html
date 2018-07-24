@@ -22,8 +22,31 @@
 
     <script src="{{url_for('static', filename='javascript/index.js')}}"></script>
     </head>
-  <body>
 
+    <div id = "contact-popup">
+
+      <p class = "popup text">
+        Interested in advice, mentorship, or have questions? Don't hesitate to ask.
+      </p>
+      <p class = "popup text">
+        6007xqf@gmail.com
+      </p>
+      <a id="foxyform_embed_link_900439" href="http://www.foxyform.com/"></a>
+      <script type="text/javascript">
+      (function(d, t){
+         var g = d.createElement(t),
+             s = d.getElementsByTagName(t)[0];
+         g.src = "http://www.foxyform.com/js.php?id=900439&sec_hash=85d6ccea0c9&width=350px";
+         s.parentNode.insertBefore(g, s);
+      }(document, "script"));
+      </script>
+    </div>
+
+    <div id = "all-awards-popup">
+      <div class = "text all-awards-container">{{all_awards|safe}}</div>
+    </div>
+
+  <body>
     <div id = "menu-bar">
       <a href = "#About-Us"><img id = "title" src="https://fontmeme.com/permalink/171003/b035082577192768f6f92bcdc57675ba.png" alt="blade-runner-font" border="0"></a>
       <img id = "rolling_logo" src="{{url_for('static', filename='images/rolling logo.png')}}">
@@ -50,47 +73,7 @@
         </div>
       </div>
 
-      <div id = "contact-popup">
-
-        <p class = "popup text">
-          Interested in advice, mentorship, or have questions? Don't hesitate to ask.
-        </p>
-        <p class = "popup text">
-          6007xqf@gmail.com
-        </p>
-        <a id="foxyform_embed_link_900439" href="http://www.foxyform.com/"></a>
-        <script type="text/javascript">
-        (function(d, t){
-           var g = d.createElement(t),
-               s = d.getElementsByTagName(t)[0];
-           g.src = "http://www.foxyform.com/js.php?id=900439&sec_hash=85d6ccea0c9&width=350px";
-           s.parentNode.insertBefore(g, s);
-        }(document, "script"));
-        </script>
-      </div>
-
-      <div id = "all-awards-popup">
-        <div class = "text all-awards-container">
-          <div class = "awards body-text text">{{recent_awards[0]|safe}}</div>
-          <div class = "awards body-text text">{{recent_awards[1]|safe}}</div>
-          <div class = "awards body-text text">{{recent_awards[2]|safe}}</div>
-          <div class = "awards body-text text">{{recent_awards[3]|safe}}</div>
-          <div class = "awards body-text text">{{recent_awards[4]|safe}}</div>
-          <div class = "awards body-text text">{{recent_awards[5]|safe}}</div>
-          <div class = "awards body-text text">{{recent_awards[6]|safe}}</div>
-          <div class = "awards body-text text">{{recent_awards[7]|safe}}</div>
-          <div class = "awards body-text text">{{recent_awards[8]|safe}}</div>
-          <div class = "awards body-text text">{{recent_awards[9]|safe}}</div>
-          <div class = "awards body-text text">{{recent_awards[10]|safe}}</div>
-          <div class = "awards body-text text">{{recent_awards[11]|safe}}</div>
-          <div class = "awards body-text text">{{recent_awards[12]|safe}}</div>
-          <div class = "awards body-text text">{{recent_awards[13]|safe}}</div>
-          <div class = "awards body-text text">{{recent_awards[14]|safe}}</div>
-        </div>
-      </div>
-
       <div id = "grey"></div>
-
       <a id = 'anchor1' class = "anchors" name="About-Us">hello</a>
       <div class="headers"><div class = "heading-links-container">
         <a class = "text heading-links" href = "#About-Us">About Us</a></div>

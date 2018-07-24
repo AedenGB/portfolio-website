@@ -9,12 +9,15 @@ app = Flask(__name__)
 def index():
     response_x = requests.get("https://api.vexdb.io/v1/get_awards?team=6007X")
     response_old = requests.get("https://api.vexdb.io/v1/get_awards?team=6007")
-    recent_awards = ["","","","","","","","","","","","","","","","","","","","",""]
+    recent_awards = []
+    all_awards = ""
     awards_list = response_x.json()[u'result'] + response_old.json()[u'result']
     i = 0;
-    while i<len(recent_awards):
+    while i<len(awards_list):
         string = awards_list[i][u'name']+"at "+ requests.get("https://api.vexdb.io/v1/get_events?sku="+str(awards_list[i][u'sku'])).json()[u'result'][0][u'name']
         string = '<a class = "links_normal text" href = "https://vexdb.io/events/view/'+str(awards_list[i][u'sku'])+'?t=awards">'+string+"</a>"
-        recent_awards[i] = string.replace("(VRC/VEXU)","")
+        recent_awards.append(string.replace("(VRC/VEXU)",""))
+        string = '<div class = "awards body-text text">' + string + "</div>"
+        all_awards+=string
         i+=1
-    return render_template('index.html', recent_awards=recent_awards)
+    return render_template('index.html', recent_awards = recent_awards, all_awards = all_awards)

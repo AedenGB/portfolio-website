@@ -1,4 +1,11 @@
 $(document).ready(function(){
+    function lockScroll(e) {
+      //alert(true.toString());
+
+      //if(!(getElementById("all-awards-popup").matches(":hover"))){
+      //e.preventDefault();
+      //}
+    }
     var setColors = function(){
       if(window.location.hash == "#light"){
         $('#theme-button').text("Dark Theme");
@@ -55,28 +62,40 @@ $(document).ready(function(){
     });
 
     $("#contact-us").on( "click", function(){//if contact us button pressed, open popup
-        //$("html").css("opacity","0.5");
         $("#contact-popup").css("visibility","visible");
         $("#grey").css("visibility","visible");
+        $('html').bind('mousewheel touchmove', lockScroll);
+        //$("body").css("overflow", "hidden");
+        //$("body").css("position, fixed")
+        $("body").css("opacity","0.5");
         return;
     });
 
     $("#all-awards").on( "click", function(){//if all awards button pressed, open popup
-        //$("html").css("opacity","0.5");
         $("#all-awards-popup").css("visibility","visible");
         $("#grey").css("visibility","visible");
+        $('body').bind('mousewheel touchmove', lockScroll);
+        //$("body").css("overflow", "hidden");
+        //$("body").css("position, fixed")
+        $("body").css("opacity","0.5");
         return;
     });
 
     $("#grey").on( "click", function(){//if grey box clicked while popup open, close popup
       if($("#contact-popup").css("visibility")==="visible"){
-        $("html").css("opacity","1");
+        $("body").css("opacity","1");
+        $('html').unbind('mousewheel touchmove', lockScroll);
+        //$("body").css("overflow", "visible");
+        //$("body").css("position, static")
         $("#contact-popup").css("visibility","collapse");
         $("#grey").css("visibility","collapse");
         return;
       }
       if($("#all-awards-popup").css("visibility")==="visible"){
-        $("html").css("opacity","1");
+        $("body").css("opacity","1");
+        $('body').unbind('mousewheel touchmove', lockScroll);
+        //$("body").css("overflow", "visible");
+        //$("body").css("position, static")
         $("#all-awards-popup").css("visibility","collapse");
         $("#grey").css("visibility","collapse");
         return;
