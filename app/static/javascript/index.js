@@ -67,7 +67,7 @@ $(document).ready(function(){
         return;
     });
 
-    $("#all-awards").on( "click", function(){//if all awards button pressed, open popup
+    $("#all-awards-button").on( "click", function(){//if all awards button pressed, open popup
         $("#all-awards-popup").css("visibility","visible");
         $("#grey").css("visibility","visible");
         $('body').bind('mousewheel touchmove', lockScroll);

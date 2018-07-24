@@ -50,6 +50,16 @@ html{
 #award5{
   opacity: 0.3;
 }
+
+#all-awards-button-container{
+  text-align: center;
+  width: 700px;
+}
+
+#all-awards-button{
+  left:45%;
+}
+
 #contact-popup{
   opacity: 1.0 !important;
   visibility:collapse;
