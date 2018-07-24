@@ -21,11 +21,11 @@ def index():
         season = competition[u'season']
         if old_season != season :
             all_awards += '<div class = "body-text text">' + season + "</div>"
-        string = awards_list[i][u'name']+"at "+ competition[u'name']
+        string = awards_list[i][u'name']+" at "+ competition[u'name']
         string = '<a class = "links_normal text" href = "https://vexdb.io/events/view/'+str(awards_list[i][u'sku'])+'?t=awards">'+string+"</a>"
         recent_awards.append(string.replace("(VRC/VEXU)",""))
         string = '<div class = "awards body-text text">' + string + "</div>"
-        all_awards+=string
+        all_awards+=string.replace("(VRC/VEXU)","")
         old_season = season
         i+=1
     return render_template('index.html', recent_awards = recent_awards, all_awards = all_awards)

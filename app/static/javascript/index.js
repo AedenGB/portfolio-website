@@ -1,6 +1,6 @@
 $(document).ready(function(){
     function lockScroll(e) {
-      if($("#all-awards-popup").css("z-index") == "13"){
+      if($("#all-awards-popup").css("z-index") == "13" || $("#contact-popup").css("visibility") == "visible"){
         e.preventDefault();
       }
     }
