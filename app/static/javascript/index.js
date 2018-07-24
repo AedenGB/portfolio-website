@@ -1,10 +1,8 @@
 $(document).ready(function(){
     function lockScroll(e) {
-      //alert(true.toString());
-
-      //if(!(getElementById("all-awards-popup").matches(":hover"))){
-      //e.preventDefault();
-      //}
+      if($("#all-awards-popup").css("z-index") == "13"){
+        e.preventDefault();
+      }
     }
     var setColors = function(){
       if(window.location.hash == "#light"){

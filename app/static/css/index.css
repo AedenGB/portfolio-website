@@ -89,6 +89,10 @@ html{
   overflow-y:scroll;
 }
 
+#all-awards-popup:hover{
+  z-index: 14;
+}
+
 #grey{
   visibility: collapse;
   float: left;
