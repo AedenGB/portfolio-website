@@ -367,6 +367,11 @@ html{
 #anchor5{
   top:48px;
 }
+#alliance_logo{
+  width: 700px;
+  visibility:collapse;
+  height: 0;
+}
 #footer{
   position: relative;
   top:120px;
