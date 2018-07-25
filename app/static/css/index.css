@@ -16,6 +16,7 @@ html{
   top:90px;
   margin:auto;
   width:700px;
+  display: block;
 }
 
 .body-text{
@@ -54,6 +55,8 @@ html{
 #all-awards-button-container{
   text-align: center;
   width: 700px;
+  display: inline-block;
+  position: relative;
 }
 
 #all-awards-button{
@@ -102,7 +105,7 @@ html{
 
 #all-awards-popup{
   height: 100%;
-  width: 800px;
+  width: 815px;
   opacity: 1 !important;
   visibility:collapse;
   z-index: 13;
@@ -193,6 +196,7 @@ html{
 #links_to_db{
   text-align: center;
 }
+
 .text{
   font-family: "Raleway",sans-serif;
   color: white;
@@ -205,7 +209,7 @@ html{
   margin:auto;
   width:700px;
   top:90px;
-  left:-50;
+  left:-40;
   max-height: 20px;
   overflow: hidden;
 }
@@ -219,8 +223,8 @@ html{
   float: left;
   padding-bottom: 3px;
   width:inline-block;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 .heading-links{
   -webkit-user-select: none; /* Safari */
@@ -355,9 +359,12 @@ html{
   top:110px;
 }
 #anchor3{
-  top:48px;
+  top:-4px;
 }
 #anchor4{
+  top:48px;
+}
+#anchor5{
   top:48px;
 }
 #footer{

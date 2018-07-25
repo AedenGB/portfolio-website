@@ -17,6 +17,7 @@ $(document).ready(function(){
         $('#contact-popup').css("box-shadow","6px 6px 4px #999");
         $('#all-awards-scrolling-div').css("background","rgb(254,254,254)");
         $('#all-awards-scrolling-div').css("box-shadow","6px 6px 4px #999");
+        $('#all-awards-popup').css("width","815px");
         $('.member-profile').css("background","lightGrey");
         $('.awards').css("box-shadow","6px 6px 4px #999");
         $('.awards').css("background","lightGrey");
@@ -38,6 +39,7 @@ $(document).ready(function(){
         $('#contact-popup').css("box-shadow","0 0 0 #000");
         $('#all-awards-scrolling-div').css("background","#222");
         $('#all-awards-scrolling-div').css("box-shadow","0 0 0 #000");
+        $('#all-awards-popup').css("width","800px");
         $('.awards').css("box-shadow","0 0 0 #000");
         $('.member-profile').css("background","#666");
         $('.awards').css("background","grey");
