@@ -7,11 +7,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    response_x = requests.get("https://api.vexdb.io/v1/get_awards?team=7700r")
+    response_x = requests.get("https://api.vexdb.io/v1/get_awards?team=6007X")
     response_old = requests.get("https://api.vexdb.io/v1/get_awards?team=6007")
     recent_awards = []
     all_awards = ""
-    awards_list = response_x.json()[u'result'] #+ response_old.json()[u'result']
+    awards_list = response_x.json()[u'result'] + response_old.json()[u'result']
     old_season = ""
     season = ""
     competition = []
