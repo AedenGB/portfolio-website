@@ -337,6 +337,7 @@ html{
   width: 160px;
   height: 160px;
   margin: 0px;
+  visibility: collapsed;
 }
 .member-picture-container{
   margin: 20px;
