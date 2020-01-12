@@ -110,7 +110,6 @@ html{
   visibility:collapse;
   z-index: 13;
   position: fixed;
-  /*margin:auto;*/
   top:0;
   left:18%;
   text-align: center;
@@ -129,7 +128,7 @@ html{
   position: fixed;
   top:0;
   left:0;
-  opacity: 0.4;
+  opacity: 0.6;
   width: 120%;
   height: 120%;
   background-color: grey;
@@ -149,18 +148,16 @@ html{
 
   width: 100%;
   padding-bottom: 6px;
-  height:95px;
+  height:90px;
   overflow: hidden;
   white-space: nowrap;
 }
 #title{
-  margin: 7px;
-  height: 50px;
-  font-family: Bladerunner;
-  font-weight: 900;
+  font-size: 50px;
+  position:absolute;
   display:inline;
   white-space: nowrap;
-  color: blue;
+  left:20px;
 }
 #title:hover{
   opacity: 0.75;
@@ -245,7 +242,7 @@ html{
   display: block;
   margin: auto;
   margin-top: 3;
-  height: 5px;
+  height: 2px;
   width: 0;
   transition: 0.5s  cubic-bezier(0.19, 1, 0.22, 1);
   opacity: 0.5;
@@ -258,34 +255,14 @@ html{
 	background: #2566C9;
 }
 
-#theme-button{
-  -webkit-user-select: none; /* Safari */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE10+/Edge */
-  user-select: none; /* Standard */
-  font-size: 15px;
-  mix-blend-mode: difference;
-  background: #444;
-  display: block;
-  position: relative;
-  float: right;
-  padding: 3px;
-  top:2px;
-  right: 5px;
-  font-weight: bold !important;
-}
-#theme-button:hover{
-  background: #666;
-  cursor:pointer;
-}
-
 #contact-us{
   display: block;
   position: relative;
   float: right;
+  font-size: 20px;
   padding: 3px;
   top:17px;
-  right: 5px;
+  right: 20px;
 }
 
 .underline-button{
@@ -300,7 +277,7 @@ html{
 	display: block;
   margin: auto;
 	margin-top: 3;
-	height: 3px;
+  height:2px;
 	width: 0px;
 	transition: ease 0.5s;
   visibility: hidden;
@@ -375,6 +352,9 @@ html{
   width: 700px;
   visibility:collapse;
   height: 0;
+}
+#linkedin_logo{
+  height: 30px;
 }
 #footer{
   position: relative;

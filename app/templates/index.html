@@ -24,21 +24,10 @@
     </head>
 
     <div id = "contact-popup">
-      <p class = "popup text">
-        Interested in advice, mentorship, or have questions? Don't hesitate to ask.
-      </p>
-      <p class = "popup text">
-        6007xqf@gmail.com
-      </p>
-      <a id="foxyform_embed_link_900439" href="http://www.foxyform.com/"></a>
-      <script type="text/javascript">
-      (function(d, t){
-         var g = d.createElement(t),
-             s = d.getElementsByTagName(t)[0];
-         g.src = "http://www.foxyform.com/js.php?id=900439&sec_hash=85d6ccea0c9&width=350px";
-         s.parentNode.insertBefore(g, s);
-      }(document, "script"));
-      </script>
+      <img 
+      <p><a class = "popup text links_normal" href = "mailto:aeden.gb@gmail.com">aeden.gb@gmail.com</a></p>
+      <p><a class = "popup text links_normal" href = "https://www.linkedin.com/in/aedengasserbrennan/" target="_blank"><img id = "linkedin_logo" src="{{url_for('static', filename='images/linkedin-logo.png')}}"></a></p>
+
     </div>
 
     <div id = "all-awards-popup">
@@ -51,12 +40,12 @@
 
   <body>
     <div id = "menu-bar">
-      <a href = "#About-Us"><img id = "title" src="https://fontmeme.com/permalink/171003/b035082577192768f6f92bcdc57675ba.png" alt="blade-runner-font" border="0"></a>
+      <div id = "title"><a class = "text" href = "#About-Us"><b style="color:#2566C9">Aeden Gasser-Brennan</b> Mechanical Engineer</a></div>
       <img id = "rolling_logo" src="{{url_for('static', filename='images/rolling logo.png')}}">
       <a href = "#About-Us">
       </a>
       <div id = "contact-us" class = "underline-button">
-        <b class = "text">Contact Us</b>
+        <b class = "text">Contact</b>
       </div>
         <div class = "container">
           <div class = "heading-links-container">
@@ -71,9 +60,6 @@
             <a class = "text heading-links" href = "#Alliance">8762 Alliance</a>
           </div><div class = "heading-links-container">
             <a class = "text heading-links" href = "http://rollingrobots.com">Rolling Robots</a>
-          </div>
-          <div class = "text" id = "theme-button">
-            Light Theme
           </div>
         </div>
       </div>
@@ -201,11 +187,6 @@
         <img id = "alliance_logo" src="{{url_for('static', filename='images/8762 logo.png')}}">
       </div>
 
-
-      <div id = "footer">
-        <p class = "text">© 2017 Team 6007X</p>
-      </div>
-      <script src="{{url_for('static', filename='plugins/tilt.jquery.js')}}"></script>
       <script>
         $('.member-picture-container').tilt({
             scale: 1.05,
