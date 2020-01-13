@@ -1,6 +1,6 @@
 <html id = 'html'>
   <head>
-    <title>6007X Robotics</title>
+    <title>Aeden Gasser-Brennan</title>
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
@@ -24,29 +24,16 @@
     </head>
 
     <div id = "contact-popup">
-      <img 
+      <img class = "picture-links closer" id = "close-window-icon" src="{{url_for('static', filename='images/close-window-icon.png')}}">
+      <div style = "height:20px"></div>
       <p><a class = "popup text links_normal" href = "mailto:aeden.gb@gmail.com">aeden.gb@gmail.com</a></p>
-      <p><a class = "popup text links_normal" href = "https://www.linkedin.com/in/aedengasserbrennan/" target="_blank"><img id = "linkedin_logo" src="{{url_for('static', filename='images/linkedin-logo.png')}}"></a></p>
-
+      <p><a class = "popup text links_normal" href = "tel:3234583881">(323) 458 - 3881</a></p>
+      <p><a class = "popup links_normal picture-links" href = "https://www.linkedin.com/in/aedengasserbrennan/" target="_blank"><img id = "linkedin_logo" src="{{url_for('static', filename='images/linkedin-logo.png')}}"></a></p>
     </div>
-
-    <div id = "all-awards-popup">
-      <div class = "add-space-to-awards-popup"></div>
-      <div id = "all-awards-scrolling-div">
-        <div class = "text all-awards-container">{{all_awards|safe}}</div>
-      </div>
-      <div class = "add-space-to-awards-popup"></div>
-    </div>
-
+    
   <body>
     <div id = "menu-bar">
-      <div id = "title"><a class = "text" href = "#About-Us"><b style="color:#2566C9">Aeden Gasser-Brennan</b> Mechanical Engineer</a></div>
-      <img id = "rolling_logo" src="{{url_for('static', filename='images/rolling logo.png')}}">
-      <a href = "#About-Us">
-      </a>
-      <div id = "contact-us" class = "underline-button">
-        <b class = "text">Contact</b>
-      </div>
+      <div id = "title"><a class = "text" href = "#About-Us"><b style = "color:#2566C9">Aeden Gasser-Brennan</b> Mechanical Engineer</a></div>
         <div class = "container">
           <div class = "heading-links-container">
             <a class = "text heading-links" href = "#About-Us">About Us</a>
@@ -57,14 +44,14 @@
           </div><div class = "heading-links-container">
             <a class = "text heading-links" href = "#Members">Members</a>
           </div><div class = "heading-links-container">
-            <a class = "text heading-links" href = "#Alliance">8762 Alliance</a>
+            <a class = "text heading-links" href = "#Alliance">Resume</a>
           </div><div class = "heading-links-container">
-            <a class = "text heading-links" href = "http://rollingrobots.com">Rolling Robots</a>
+            <b id = "contact-button" class = "text heading-links">Contact</b>
           </div>
         </div>
       </div>
 
-      <div id = "grey"></div>
+      <div class = "closer" id = "grey"></div>
       <a id = 'anchor1' class = "anchors" name="About-Us">hello</a>
       <div class="headers"><div class = "heading-links-container">
         <a class = "text heading-links" href = "#About-Us">About Us</a></div>
@@ -83,34 +70,18 @@
         <a class = "text heading-links">Awards</a></div>
       </div>
 
-      <div class = " text text-container">
-        <div id = "award1" class = "awards body-text text">{{recent_awards[0]|safe}}</div>
-        <div id = "award2" class = "awards body-text text">{{recent_awards[1]|safe}}</div>
-        <div id = "award3" class = "awards body-text text">{{recent_awards[2]|safe}}</div>
-        <div id = "award4" class = "awards body-text text">{{recent_awards[3]|safe}}</div>
-        <div id = "award5" class = "awards body-text text">{{recent_awards[4]|safe}}</div>
-        <div id = "links_to_db">
-          <a class = "text links" href = "https://vexdb.io/">vexDB</a> •
-          <a class = "text links" href = "https://vexdb.io/teams/view/6007X">6007X</a> •
-          <a class = "text links" href = "https://vexdb.io/teams/view/6007">6007<a/>
+      <div class = "text-container">
+        <div class = "video-containers">
+          <iframe class = 'videos' width="560" height="315" src="https://www.youtube.com/embed/XSXmZhB-8sU?rel=0&amp;fs=0&amp;showinfo=0" frameborder="0" allowfullscreen>hello</iframe>
         </div>
-        <div id = "all-awards-button-container">
-          <p id = "all-awards-button" class = "body-text underline-button text">
-            All Awards
-          </p>
-        </div>
+        <p class = "body-text text">6007 began in 2013, at <a class = "links" href = "https://www.millikanmiddleschool.org/">Millikan Science Academy<a/>.  We have been competing since <a  href = "https://www.youtube.com/watch?v=N-ehrKSYfjkVex" class = "links"> Sack Attack<a/> and have competed at worlds four times, during <a class = "links" href = "https://www.youtube.com/watch?v=gsq2qjjNwPU">Toss Up<a/>, <a class = "links" href = "https://www.youtube.com/watch?v=PJ-5H3JVtPs">Skyrise<a/>, <a class = "links" href = "https://www.youtube.com/watch?v=0t2zstQ84Tw">Starstruck<a/>, and <a class = "links" href = "https://www.youtube.com/watch?v=1Yo_mlR1VJU">In the Zone<a/>. We are best known for winning the Science Division in 2017, and for winning the California State Championship twice. 6007 is also devoted to giving back to the community, providing mentorship to younger teams, and remaining available to answer teams’ questions.
+        </p>
       </div>
-
-      <!--<p id = "block-divider" class = "body-text text">
-        this is a placeholder
-      </p>-->
 
       <a id = 'anchor3' class = "anchors" name="Seasons">hello</a>
       <div class="headers"><div class = "heading-links-container">
         <a class = "text heading-links" href = "#Seasons">Seasons</a></div>
       </div>
-
-
 
       <div class = "text-container">
         <div class = "video-containers">
@@ -178,13 +149,15 @@
 
       <a id = 'anchor5' class = "anchors" name="Alliance">hello</a>
       <div class="headers"><div class = "heading-links-container">
-        <a class = "text heading-links" href = "#Alliance">8762 Alliance</a></div>
+        <a class = "text heading-links" href = "#Alliance">Resume</a></div>
       </div>
-      <div class = "text-container">
 
-        <p class = "body-text text">The 8762 Alliance is an alliance that has been formed by some of the top teams in California, including the 8000 teams, team 62A, team 6007X, and the 7700 rolling robots teams. Every included team has won their division at worlds at least once. The purpose of this is alliance is to share ideas and  to work together to improve them.
-        </p>
-        <img id = "alliance_logo" src="{{url_for('static', filename='images/8762 logo.png')}}">
+      <div class = "text-container">
+      <object data="{{url_for('static', filename='documents/resume.pdf')}}" type="application/pdf" height="100%" width="100%">
+      <iframe src="{{url_for('static', filename='documents/resume.pdf')}}" style="border: none;" height="100%" width="100%">
+      This browser does not support PDFs. Please download the PDF to view it: <a href="{{url_for('static', filename='documents/resume.pdf')}}">Download PDF</a>
+      </iframe>
+      </object>
       </div>
 
       <script>

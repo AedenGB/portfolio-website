@@ -49,30 +49,17 @@ $(document).ready(function(){
     $('html').hide();
     $('html').fadeIn(1000);
 
-    $("#contact-us").on( "click", function(){//if contact us button pressed, open popup
+    $("#contact-button").on( "click", function(){//if contact us button pressed, open popup
         $("#contact-popup").css("visibility","visible");
         $("#grey").css("visibility","visible");
         $('html').bind('mousewheel touchmove', lockScroll);
         return;
     });
 
-    $("#all-awards-button").on( "click", function(){//if all awards button pressed, open popup
-        $("#all-awards-popup").css("visibility","visible");
-        $("#grey").css("visibility","visible");
-        $('body').bind('mousewheel touchmove', lockScroll);
-        return;
-    });
-
-    $("#grey").on( "click", function(){//if grey box clicked while popup open, close popup
+    $(".closer").on( "click", function(){//if grey box clicked while popup open, close popup
       if($("#contact-popup").css("visibility")==="visible"){
         $('html').unbind('mousewheel touchmove', lockScroll);
         $("#contact-popup").css("visibility","collapse");
-        $("#grey").css("visibility","collapse");
-        return;
-      }
-      if($("#all-awards-popup").css("visibility")==="visible"){
-        $('body').unbind('mousewheel touchmove', lockScroll);
-        $("#all-awards-popup").css("visibility","collapse");
         $("#grey").css("visibility","collapse");
         return;
       }
