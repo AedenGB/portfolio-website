@@ -9,7 +9,7 @@ $(document).ready(function(){
 
   function adjust_for_window_size() {
     var height = $("#menu-bar").height();
-    $("#body-text").css("top", height-10);
+    $("#body-text").css("padding-top", height-10);
     $(".anchor").css("top",-height);
   };
 
