@@ -4,168 +4,70 @@
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 
     <script src="{{url_for('static', filename='plugins/jquery.scrollTo.min.js')}}"></script>
     <script src="{{url_for('static', filename='plugins/jquery.localScroll.min.js')}}"></script>
 
-    <script>
-      $(document).ready(function(){
-          $.localScroll({
-             target:'body',
-             duration: 900
-          });
-        });
-    </script>
-
     <script src="{{url_for('static', filename='javascript/index.js')}}"></script>
     </head>
 
-    <div id = "contact-popup">
-      <img class = "picture-links closer" id = "close-window-icon" src="{{url_for('static', filename='images/close-window-icon.png')}}">
-      <div style = "height:20px"></div>
-      <p><a class = "popup text links_normal" href = "mailto:aeden.gb@gmail.com">aeden.gb@gmail.com</a></p>
-      <p><a class = "popup text links_normal" href = "tel:3234583881">(323) 458 - 3881</a></p>
-      <p><a class = "popup links_normal picture-links" href = "https://www.linkedin.com/in/aedengasserbrennan/" target="_blank"><img id = "linkedin_logo" src="{{url_for('static', filename='images/linkedin-logo.png')}}"></a></p>
-    </div>
-    
   <body>
+    <div id = "contact-popup">
+      <img class = "clickable popup-closer" id = "close-window-icon" src="{{url_for('static', filename='images/close-window-icon.png')}}">
+      <div style = "height:20px"></div>
+      <p><a class = "external-links" href = "mailto:aeden.gb@gmail.com">aeden.gb@gmail.com</a></p>
+      <p><a class = "external-links" href = "tel:3234583881">(323) 458 - 3881</a></p>
+      <p><a class = "external-links clickable" href = "https://www.linkedin.com/in/aedengasserbrennan/"><img id = "linkedin_logo" src="{{url_for('static', filename='images/linkedin-logo.png')}}"></a></p>
+    </div>
+    <div class = "popup-closer" id = "grey"></div>
+
     <div id = "menu-bar">
-      <div id = "title"><a class = "text" href = "#About-Us"><b style = "color:#2566C9">Aeden Gasser-Brennan</b> Mechanical Engineer</a></div>
-        <div class = "container">
-          <div class = "heading-links-container">
-            <a class = "text heading-links" href = "#About-Us">About Us</a>
-          </div><div class = "heading-links-container">
-            <a class = "text heading-links" href = "#Awards">Awards</a>
-          </div><div class = "heading-links-container">
-            <a class = "text heading-links" href = "#Seasons">Seasons</a>
-          </div><div class = "heading-links-container">
-            <a class = "text heading-links" href = "#Members">Members</a>
-          </div><div class = "heading-links-container">
-            <a class = "text heading-links" href = "#Alliance">Resume</a>
-          </div><div class = "heading-links-container">
-            <b id = "contact-button" class = "text heading-links">Contact</b>
-          </div>
-        </div>
+      <a id = "title" class = "clickable" href = "#About-Me"><b style = "color:#2566C9">Aeden Gasser-Brennan</b> Mechanical Engineer</a>
+      <div>
+        <a class = "heading-link" href = "#About-Me">About Me</a>
+        <a class = "heading-link" href = "#Past-Employment">Past Employment</a>
+        <a class = "heading-link" href = "#Projects">Projects</a>
+        <a class = "heading-link" href = "#Education">Education</a>
+        <a class = "heading-link" href = "#Resume">Resume</a>
+        <a class = "heading-link" id = "contact-button">Contact</a>
       </div>
+    </div>
 
-      <div class = "closer" id = "grey"></div>
-      <a id = 'anchor1' class = "anchors" name="About-Us">hello</a>
-      <div class="headers"><div class = "heading-links-container">
-        <a class = "text heading-links" href = "#About-Us">About Us</a></div>
-      </div>
-      <div class = "text-container">
-        <div class = "video-containers">
-          <iframe class = 'videos' width="560" height="315" src="https://www.youtube.com/embed/XSXmZhB-8sU?rel=0&amp;fs=0&amp;showinfo=0" frameborder="0" allowfullscreen>hello</iframe>
-        </div>
-        <p class = "body-text text">6007 began in 2013, at <a class = "links" href = "https://www.millikanmiddleschool.org/">Millikan Science Academy<a/>.  We have been competing since <a  href = "https://www.youtube.com/watch?v=N-ehrKSYfjkVex" class = "links"> Sack Attack<a/> and have competed at worlds four times, during <a class = "links" href = "https://www.youtube.com/watch?v=gsq2qjjNwPU">Toss Up<a/>, <a class = "links" href = "https://www.youtube.com/watch?v=PJ-5H3JVtPs">Skyrise<a/>, <a class = "links" href = "https://www.youtube.com/watch?v=0t2zstQ84Tw">Starstruck<a/>, and <a class = "links" href = "https://www.youtube.com/watch?v=1Yo_mlR1VJU">In the Zone<a/>. We are best known for winning the Science Division in 2017, and for winning the California State Championship twice. 6007 is also devoted to giving back to the community, providing mentorship to younger teams, and remaining available to answer teams’ questions.
-        </p>
-      </div>
+    <div id = "body-text">
+      <a id = 'anchor1' class = "anchor" name="About-Me">hello</a>
+      <a class = "subheading" href = "#About-Me">About Me</a>
+      <p>
+        hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello
+      </p>
 
-      <a id = 'anchor2' class = "anchors" name="Awards">hello</a>
+      <a id = 'anchor2' class = "anchor" name="Past-Employment">hello</a>
+      <a class = "subheading" href = "#Past-Employment">Past Employment</a>
+      <p>
+        hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello
+      </p>
 
-      <div class="headers"><div class = "heading-links-container">
-        <a class = "text heading-links">Awards</a></div>
-      </div>
+      <a id = 'anchor3' class = "anchor" name="Projects">hello</a>
+      <a class = "subheading" href = "#Projects">Projects</a>
+      <p>
+        hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello
+      </p>
 
-      <div class = "text-container">
-        <div class = "video-containers">
-          <iframe class = 'videos' width="560" height="315" src="https://www.youtube.com/embed/XSXmZhB-8sU?rel=0&amp;fs=0&amp;showinfo=0" frameborder="0" allowfullscreen>hello</iframe>
-        </div>
-        <p class = "body-text text">6007 began in 2013, at <a class = "links" href = "https://www.millikanmiddleschool.org/">Millikan Science Academy<a/>.  We have been competing since <a  href = "https://www.youtube.com/watch?v=N-ehrKSYfjkVex" class = "links"> Sack Attack<a/> and have competed at worlds four times, during <a class = "links" href = "https://www.youtube.com/watch?v=gsq2qjjNwPU">Toss Up<a/>, <a class = "links" href = "https://www.youtube.com/watch?v=PJ-5H3JVtPs">Skyrise<a/>, <a class = "links" href = "https://www.youtube.com/watch?v=0t2zstQ84Tw">Starstruck<a/>, and <a class = "links" href = "https://www.youtube.com/watch?v=1Yo_mlR1VJU">In the Zone<a/>. We are best known for winning the Science Division in 2017, and for winning the California State Championship twice. 6007 is also devoted to giving back to the community, providing mentorship to younger teams, and remaining available to answer teams’ questions.
-        </p>
-      </div>
-
-      <a id = 'anchor3' class = "anchors" name="Seasons">hello</a>
-      <div class="headers"><div class = "heading-links-container">
-        <a class = "text heading-links" href = "#Seasons">Seasons</a></div>
-      </div>
-
-      <div class = "text-container">
-        <div class = "video-containers">
-          <iframe class = 'videos' width="560" height="315" src="https://www.youtube.com/embed/X7jy89NVId8?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-        <p class = "body-text text">In 2018, 6007X was able to place 17 in the world in the <a class = "links" href = "https://vexdb.io/skills/VRC/In_The_Zone/Robot">Robot Skills Ranking<a/>, as well as coming in second in the <a class = "links" href = "https://www.youtube.com/watch?v=DS0BRlRDlnc">Promote Award Challenge<a/>.
-        </p>
-      </div>
-      <div class = "text text-container">
-        <div class = "video-containers">
-          <iframe class = 'videos' width="560" height="315" src="https://www.youtube.com/embed/v4IcV4s2VcY?rel=0&amp;fs=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <p class = "body-text text">In 2017, by far the most sucessful year of 6007, in the game <a class = "links" href = "https://www.youtube.com/watch?v=0t2zstQ84Tw">Vex Starstruck<a/>, was able to rank 5th in the world in High School.
-        </p>
-        <div class = "video-containers">
-          <iframe class = 'videos' width="560" height="315" src="https://www.youtube.com/embed/XSXmZhB-8sU?rel=0&amp;fs=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <p class = "body-text text">In 6007's first year of high school competition, <a class = "links" href = "https://www.youtube.com/watch?v=A8daR6qBw3M">Nothing But Net<a/>, the team struggled with a cortex failure at states and was unable to qualify for worlds.</p>
-
-        <div class = "video-containers">
-          <iframe class = 'videos' width="560" height="315" src="https://www.youtube.com/embed/8zsNPf2fyVU?rel=0&amp;fs=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <p class = "body-text text">In 2015, <a class = "links" href = "https://www.youtube.com/watch?v=PJ-5H3JVtPs">Skyrise<a/>,the team made it to worlds and went undefeated for the first 5 matches, the only middle team to do so. However, an untimely fall rendered the robot almost useless and the team lost three of their remaining matches, barely missing the cutoff for elimination.</p>
-
-        <div class = "video-containers">
-          <iframe class = 'videos' width="560" height="315" src="https://www.youtube.com/embed/OFA-4lDUanE?rel=0&amp;fs=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <p class = "body-text text">In 2014, 6007's first year of serious competition, <a class = "links" href = "https://www.youtube.com/watch?v=gsq2qjjNwPU">Toss Up<a/>, the team made it to worlds quarterfinals but was eliminated by the eventual world champions.</p>
-
-      </div>
+      <a id = 'anchor4' class = "anchor" name="Education">hello</a>
+      <a class = "subheading" href = "#Education">Education</a>
+      <p>
+        hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello
+      </p>
 
 
-      <a id = 'anchor4' class = "anchors" name="Members">hello</a>
-      <div class="headers"><div class = "heading-links-container">
-        <a class = "text heading-links" href = "#Members">Members</a></div>
-      </div>
-      <div class = "text-container">
-
-        <div class = "member-profile">
-          <div class = "member-picture-container" data-tilt><img class = "member-picture" src = "http://www.digitalpedagogylab.com/hybridped/wp-content/uploads/sites/12/2016/01/slu-mugshot-square-bw.jpg" />
-          </div>
-          <p class = "body-text text member-bio">
-            Hi, I'm Aeden! This is my 6th year of Vex competition. As the most experienced member on the team, I serve the role of team captain, programmer, and lead builder/designer (and website maker).
-          </p>
-        </div>
-
-        <div class = "member-profile">
-          <div class = "member-picture-container" data-tilt><img class = "member-picture" src = "http://www.digitalpedagogylab.com/hybridped/wp-content/uploads/sites/12/2016/01/slu-mugshot-square-bw.jpg" />
-          </div>
-          <p class = "body-text text member-bio">
-            Hi!  I’m Ben, and this is my 4th year of vex.  I worked alongside Aeden for my first few seasons as a builder, and after Starstruck I broke off and formed my own team. Now, I am the captain of team 6671X.
-          </p>
-        </div>
-
-        <div class = "member-profile">
-          <div class = "member-picture-container" data-tilt><img class = "member-picture" src = "http://www.digitalpedagogylab.com/hybridped/wp-content/uploads/sites/12/2016/01/slu-mugshot-square-bw.jpg" />
-          </div>
-          <p class = "body-text text member-bio">
-            Hi, I'm Ethan! This is my first year of Vex competition. I am responsible for the engineering notebook and online challenges, such as the promote award, in adition to helping build the robot.
-          </p>
-        </div>
-
-      </div>
+      <a id = 'anchor5' class = "anchor" name="Resume">hello</a>
+      <a class = "subheading" href = "#Resume">Resume</a>
+      <p>
+        hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello  hello
+      </p>
 
 
-      <a id = 'anchor5' class = "anchors" name="Alliance">hello</a>
-      <div class="headers"><div class = "heading-links-container">
-        <a class = "text heading-links" href = "#Alliance">Resume</a></div>
-      </div>
-
-      <div class = "text-container">
-      <object data="{{url_for('static', filename='documents/resume.pdf')}}" type="application/pdf" height="100%" width="100%">
-      <iframe src="{{url_for('static', filename='documents/resume.pdf')}}" style="border: none;" height="100%" width="100%">
-      This browser does not support PDFs. Please download the PDF to view it: <a href="{{url_for('static', filename='documents/resume.pdf')}}">Download PDF</a>
-      </iframe>
-      </object>
-      </div>
-
-      <script>
-        $('.member-picture-container').tilt({
-            scale: 1.05,
-            glare: true,
-            maxGlare: 0.2
-        });
-      </script>
-    </body>
+    </div>
+  </body>
 </html>
