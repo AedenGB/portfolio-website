@@ -80,6 +80,7 @@ html{
   display:inline;
   white-space: nowrap;
   left:20px;
+  font-weight: 400;
 }
 
 .menu-link-container{
@@ -135,22 +136,33 @@ html{
 body{
   font-family: "Raleway",sans-serif;
   text-decoration: none;
+  font-weight: 600;
 }
 #body-text{
   z-index: 1;
   margin: auto;
+
 }
 
 #resume{
   z-index: 1;
+}
+.flex{
+  display: flex;
+}
+.download-link{
+  text-align: center;
+  flex-direction: row;
+  flex-grow: 1;
 }
 
 a{
   color:black;
   text-decoration: none;
 }
-.external-links:hover{
-  font-weight:lighter;
+.external-link:hover{
+  opacity: 0.6;
+  color: #2566C9;
 }
 
 .clickable:hover{
@@ -158,11 +170,14 @@ a{
   cursor: pointer;
 }
 
-.heading, .subheading{
-  font-weight: bold;
+.heading, .subheading, .subsubheading{
+  font-weight: 800;
 }
 .heading:hover, .subheading:hover{
   color:#2566C9 !important;
+}
+.subsubheading{
+  margin-left: 20px;
 }
 
 .anchor {
