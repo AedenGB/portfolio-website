@@ -5,20 +5,19 @@ html{
     -o-background-size: cover;
     background-size: cover;
 }
-::-webkit-scrollbar {
+/*::-webkit-scrollbar {
     width: 0px;
-    background: transparent; /* make scrollbar transparent */
+    background: transparent;
 }
-
+*/
 #grey{
   position: fixed;
-  top:0;
   left:0;
+  top:0;
+  width: 100%;
+  height: 100%;
 
-  width: 120%;
-  height: 120%;
-  background-color: grey;
-  opacity: 0.6;
+  background: rgba(128,128,128,0.6);
 
   visibility: collapse;
 
@@ -28,19 +27,19 @@ html{
 #contact-popup{
   visibility:collapse;
   z-index: 4;
+
   position: fixed;
-  height: inline-block;
-  width: 400px;
-  margin-top: -150px;
-  margin-left: -200px;
   left:50%;
-  top:30%;
+  top:15%;
+  transform: translate(-50%, 0);
+
+  height: inline-block;
+  padding-bottom: 20px;
+  background:rgb(254,254,254);
+
   font-size: 25px;
   text-align: center;
   font-weight: bolder;
-  padding-bottom: 20px;
-  background:rgb(254,254,254);
-  box-shadow:3px 3px 4px #999;
 }
 #close-window-icon{
   right:0;
@@ -48,10 +47,13 @@ html{
   padding:10px;
   height: 30px;
 }
-#linkedin_logo{
+#linkedin-logo{
   height: 30px;
 }
 
+.shadow{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 #menu-bar{
   z-index: 2;
@@ -64,46 +66,42 @@ html{
   height:inline-block;
 }
 #title{
-  font-size: 50px;
   display:inline;
   white-space: nowrap;
   left:20px;
 }
 
-.heading-link{
+.menu-link-container{
+  display: block;
+  float: left;
+
+  text-align: center;
+}
+.menu-link{
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 
-  display: inline-block;
-  position: relative;
-  float: left;
   width:inline-block;
-  margin-left: 40px;
-  margin-right: 40px;
-  size:inline-block;
-
-  padding-bottom: 3px;
-  font-size: 20px;
-  font-weight: bold;
+  padding-bottom: 6px;
+  position: relative;
 
   cursor:pointer;
 }
-.heading-link:after {
-  position: relative;
-  content: '';
+.menu-link:after {
+  position: absolute;
   display: block;
-  margin: auto;
-  margin-top: 3;
-  height: 2px;
+  left:0;
+  right:0;
+  content: '';
+  height: 3px;
   width: 0;
   transition: 0.5s  cubic-bezier(0.19, 1, 0.22, 1);
   background: #2566C9;
 }
-.heading-link:hover:after{
+.menu-link:hover:after{
   visibility: visible;
-  opacity: 1;
 	width: 100%;
 	background: #2566C9;
 }
@@ -114,9 +112,12 @@ body{
   text-decoration: none;
 }
 #body-text{
-  width:700px;
   z-index: 1;
-  margin: auto;
+  margin: auto; 
+}
+
+#resume{
+  z-index: 1;
 }
 
 a{
@@ -132,10 +133,11 @@ a{
   cursor: pointer;
 }
 
-.subheading{
+.heading{
+  font-size: 25px;
   font-weight: bold;
 }
-.subheading:hover{
+.heading:hover{
   color:#2566C9 !important;
 }
 
