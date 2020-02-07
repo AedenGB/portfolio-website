@@ -40,7 +40,7 @@ $(document).ready(function(){
 
   $(window).resize(adjust_for_window_size);
 
-  $("#contact-button").on( "click", function(){//if contact us button pressed, open popup
+  $("#six").on( "click", function(){//if contact us button pressed, open popup
       $("#contact-popup").css("max-width","400");
       $("#grey").css("visibility","visible");
       $("#grey").css("opacity","0.6");
@@ -66,5 +66,26 @@ $(document).ready(function(){
       $('#menu-bar, .dropdown-container').css('box-shadow',"0 2px 6px #666");
       $('#menu-bar, .dropdown-container').css('background',"rgba(256,256,256,1)");
     }
-});
+
+    var employment = $("#Employment-Section").offset().top + $("#Employment-Section").outerHeight();
+    var projects = $("#Projects-Section").offset().top + $("#Projects-Section").outerHeight();
+    var education = $("#Education-Section").offset().top + $("#Education-Section").outerHeight();
+    var resume = $("#Resume-Section").offset().top + $("#Resume-Section").outerHeight();
+
+
+
+    if (top_of_screen < employment-menu_height){
+      $(this).toggleClass('underlined');
+      console.log("4");
+    }else if (top_of_screen < projects-menu_height){
+      console.log("3");
+    }else if (top_of_screen < education-menu_height){
+      console.log("2");
+    }else if (top_of_screen < resume-menu_height){
+      console.log("1");
+    }else {
+      console.log("0");
+    }
+
+  });
 });

@@ -24,29 +24,14 @@
     <div class = "popup-closer" id = "grey"></div>
 
     <div id = "menu-bar">
-      <div class = "flex" id = "menu-container">
-        <span class = "menu-link-container"><a class = "menu-link heading" href = "#Homepage"><img class = "clickable" id = "home-icon" src="{{url_for('static', filename='images/home-icon.svg')}}"></a></span>
-
-        <span class = "menu-link-container"><a class = "heading" href = "#Employment">Employment</a>
-          <div class = "dropdown-container shadow">
-            <a class = "menu-link subheading" href = "#Freelance-CAD">Freelance CAD</a><br>
-            <a class = "menu-link subheading" href = "#TAFLab-Research">TAFLab Research</a><br>
-            <a class = "menu-link subheading" href = "#CSU-Fullerton-Research">CSU Fullerton Research</a><br>
-          </div>
-        </span>
-
-        <span class = "menu-link-container"><a class = "heading" href = "#Projects">Projects</a>
-          <div class = "dropdown-container shadow">
-            <a class = "menu-link subheading" href = "#Formula-Racing">Formula Racing</a><br>
-            <a class = "menu-link subheading" href = "#Battlebots">Battlebots</a><br>
-            <a class = "menu-link subheading" href = "#VEX-Robotics">VEX Robotics</a><br>
-            <a class = "menu-link subheading" href = "#FRC-Robotics">FRC Robotics</a><br>
-          </div>
-        </span>
-
-        <span class = "menu-link-container"><a class = "menu-link heading" href = "#Education">Education</a></span>
-        <span class = "menu-link-container"><a class = "menu-link heading" href = "#Resume">Resume</a></span>
-        <span class = "menu-link-container"><a class = "menu-link heading" id = "contact-button">Contact</a></span>
+      <divid = "menu-bar-container">
+        <a id = "one" class = "menu-link heading" href = "#Homepage"><img class = "clickable" id = "home-icon" src="{{url_for('static', filename='images/home-icon.svg')}}"></a>
+        <a id = "two" class = "menu-link heading" href = "#Employment">Employment</a>
+        <a id = "three" class = "menu-link heading" href = "#Projects">Projects</a>
+        <a id = "four" class = "menu-link heading" href = "#Education">Education</a>
+        <a id = "five" class = "menu-link heading" href = "#Resume">Resume</a>
+        <a id = "six" class = "menu-link heading">Contact</a>
+        <div id = "menu-underline"></div>
       </div>
     </div>
 
@@ -67,7 +52,7 @@
           </p>
 
           <a class = "anchor" name="Freelance-CAD">a</a>
-          <a class = "subheading" href = "#Freelance-CAD">Freelance CAD</a>
+          <a class = "heading" href = "#Freelance-CAD">Freelance CAD</a>
           <p>
             I am currently accepting proposals to do small independent CAD projects. Here is some of my past work.
             <img class = "width-controlled" src = "{{url_for('static', filename='images/go-pro-mount.JPG')}}">
@@ -75,13 +60,13 @@
           </p>
 
           <a class = "anchor" name="TAFLab-Research">a</a>
-          <a class = "subheading" href = "#TAFLab-Research">TAFLab-Research</a>
+          <a class = "heading" href = "#TAFLab-Research">TAFLab-Research</a>
           <p>
             hello
           </p>
 
           <a class = "anchor" name="CSU-Fullerton-Research">a</a>
-          <a class = "subheading" href = "#CSU-Fullerton-Research">CSU Fullerton Research</a>
+          <a class = "heading" href = "#CSU-Fullerton-Research">CSU Fullerton Research</a>
           <p>
             hello
           </p>
@@ -97,25 +82,25 @@
             </p>
 
           <a class = "anchor" name="Formula-Racing">a</a>
-          <a class = "subheading" href = "#Formula-Racing">Formula Racing</a>
+          <a class = "heading" href = "#Formula-Racing">Formula Racing</a>
             <p>
               hello
             </p>
 
           <a class = "anchor" name="Battlebots">a</a>
-          <a class = "subheading" href = "#Battlebots">Battlebots</a>
+          <a class = "heading" href = "#Battlebots">Battlebots</a>
             <p>
               hello
             </p>
 
           <a class = "anchor" name="VEX-Robotics">a</a>
-          <a class = "subheading" href = "#VEX-Robotics">VEX Robotics</a>
+          <a class = "heading" href = "#VEX-Robotics">VEX Robotics</a>
             <p>
               hello
             </p>
 
           <a class = "anchor" name="FRC-Robotics">a</a>
-          <a class = "subheading" href = "#FRC-Robotics">FRC Robotics</a>
+          <a class = "heading" href = "#FRC-Robotics">FRC Robotics</a>
             <p>
               hello
             </p>
@@ -126,38 +111,43 @@
         <div class = "width-controlled">
           <a class = "anchor" name="Education">a</a>
           <a class = "heading" href = "#Education">Education</a>
+          <span class = "heading">UC Berkeley Mechanical Engineering - GPA 3.96</span>
 
-          <p> I am currently pursuing my BSME in the Berkeley College of Engineering.</p>
-          <span class = "subheading">UC Berkeley Mechanical Engineering - GPA 3.96<br></span>
-            <span class = "subsubheading">Fall 2019</span>
-              <ul>
-                <li><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2019-fall-engin-25-001-lec-001">ENGIN 25 - Visualization for Design</a></li>
-                <li><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2019-fall-math-54-003-lec-003">MATH 54 - Linear Algebra and Diffrential Equations</a></li>
-                <li><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2019-fall-chem-1a-002-lec-002">CHEM 1A - General Chemistry</a></li>
-                <li><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2019-fall-chem-1al-001-lec-001">CHEM 1AL - General Chemistry Laboratory</a></li>
-                <li><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2019-fall-german-1-006-lec-006">German 1 - Introductory German 1</a></li>
-              </ul>
-            <span class = "subsubheading">Spring 2020</span>
-              <ul>
-                <li><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2020-spring-engin-7-001-lec-001">ENGIN 7 - Introduction to Computer Programming for Scientists and Engineers</a></li>
-                <li><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2020-spring-math-53-001-lec-001">MATH 53 - Multivariable Calculus</a></li>
-                <li><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2020-spring-physics-7b-001-lec-001">PHYSICS 7B - Physics for Scientists and Engineers</a></li>
-                <li><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2020-spring-german-2-002-lec-002">German 2 - Introductory German 2</a></li>
-              </ul>
 
-          <span class = "subheading">Harvard-Westlake High School - GPA 4.45</span>
-            <ul>
-              <li><a class = "external-link" target="_blank" href = "https://apcentral.collegeboard.org/courses/ap-physics-c-mechanics/course">AP Physics C Mechanics</a></li>
-              <li><a class = "external-link" target="_blank" href = "https://apcentral.collegeboard.org/courses/ap-physics-c-electricity-and-magnetism/course">AP Physics C Electricity and Magnetism</a></li>
-              <li><a class = "external-link" target="_blank" href = "https://apcentral.collegeboard.org/courses/ap-calculus-bc/course">AP Calculus BC</a></li>
-              <li><a class = "external-link" target="_blank" href = "https://apcentral.collegeboard.org/courses/ap-calculus-ab/course">AP Calculus AB</a></li>
-              <li><a class = "external-link" target="_blank" href = "https://apcentral.collegeboard.org/courses/ap-statistics/course">AP Statistics</a></li>
-              <li><a class = "external-link" target="_blank" href = "https://apcentral.collegeboard.org/courses/ap-chemistry/course">AP Chemistry</a></li>
-              <li><a class = "external-link" target="_blank" href = "https://apcentral.collegeboard.org/courses/ap-english-language-and-composition/course">AP English: Language and Composition</a></li>
-              <li><a class = "external-link" target="_blank" href = "https://apcentral.collegeboard.org/courses/ap-english-literature-and-composition/course">AP English: Literature and Composition</a></li>
-              <li><a class = "external-link" target="_blank" href = "https://apcentral.collegeboard.org/courses/ap-united-states-history/course">AP United States History</a></li>
-            </ul>
+          <button class="accordion">Fall 2019</button>
+          <div class="panel">
+              <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2019-fall-engin-25-001-lec-001">ENGIN 25 - Visualization for Design</a></p>
+              <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2019-fall-math-54-003-lec-003">MATH 54 - Linear Algebra and Diffrential Equations</a></p>
+              <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2019-fall-chem-1a-002-lec-002">CHEM 1A - General Chemistry</a></p>
+              <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2019-fall-chem-1al-001-lec-001">CHEM 1AL - General Chemistry Laboratory</a></p>
+              <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2019-fall-german-1-006-lec-006">German 1 - Introductory German 1</a></p>
           </div>
+
+        <button class="accordion">Spring 2020</button>
+          <div class="panel">
+            <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2020-spring-engin-7-001-lec-001">ENGIN 7 - Introduction to Computer Programming for Scientists and Engineers</a></p>
+            <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2020-spring-math-53-001-lec-001">MATH 53 - Multivariable Calculus</a></p>
+            <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2020-spring-physics-7b-001-lec-001">PHYSICS 7B - Physics for Scientists and Engineers</a></p>
+            <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2020-spring-german-2-002-lec-002">German 2 - Introductory German 2</a></p>
+          </div>
+
+         <span class = "heading">Harvard-Westlake High School - GPA 4.45</span>
+
+        <button class="accordion">High School Classes</button>
+          <div class="panel">
+            <p><a class = "external-link" target="_blank" href = "https://apcentral.collegeboard.org/courses/ap-physics-c-mechanics/course">AP Physics C Mechanics</a></p>
+            <p><a class = "external-link" target="_blank" href = "https://apcentral.collegeboard.org/courses/ap-physics-c-electricity-and-magnetism/course">AP Physics C Electricity and Magnetism</a></p>
+            <p><a class = "external-link" target="_blank" href = "https://apcentral.collegeboard.org/courses/ap-calculus-bc/course">AP Calculus BC</a></p>
+              <p><a class = "external-link" target="_blank" href = "https://apcentral.collegeboard.org/courses/ap-calculus-ab/course">AP Calculus AB</a></p>
+              <p><a class = "external-link" target="_blank" href = "https://apcentral.collegeboard.org/courses/ap-statistics/course">AP Statistics</a></p>
+              <p><a class = "external-link" target="_blank" href = "https://apcentral.collegeboard.org/courses/ap-chemistry/course">AP Chemistry</a></p>
+              <p><a class = "external-link" target="_blank" href = "https://apcentral.collegeboard.org/courses/ap-english-language-and-composition/course">AP English: Language and Composition</a></p>
+              <p><a class = "external-link" target="_blank" href = "https://apcentral.collegeboard.org/courses/ap-english-literature-and-composition/course">AP English: Literature and Composition</a></p>
+              <p><a class = "external-link" target="_blank" href = "https://apcentral.collegeboard.org/courses/ap-united-states-history/course">AP United States History</a></p>
+            </div>
+
+        </div>
+
       </div>
 
       <div id = "Resume-Section" class = "body-section">
@@ -165,8 +155,8 @@
           <a class = "anchor" name="Resume">a</a>
           <a class = "heading" href = "#Resume">Resume</a>
           <p class = "flex">
-            <span class = "download-link"><a target="_blank" class = "menu-link subheading" href = "{{url_for('static', filename='documents/resume.pdf')}}">PDF</a></span>
-            <span class = "download-link"><a class = "menu-link subheading" href = "{{url_for('static', filename='documents/resume.docx')}}">DOCX</a></span>
+            <span class = "download-link"><a target="_blank" class = "menu-link heading" href = "{{url_for('static', filename='documents/resume.pdf')}}">PDF</a></span>
+            <span class = "download-link"><a class = "menu-link heading" href = "{{url_for('static', filename='documents/resume.docx')}}">DOCX</a></span>
           </p>
           <embed id = "resume" class = "width-controlled shadow" type='application/pdf' src="{{url_for('static', filename='documents/resume.pdf')}}#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0&scrollbar=0">
         </div>

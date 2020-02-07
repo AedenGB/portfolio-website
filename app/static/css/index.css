@@ -69,71 +69,68 @@ html{
   top:0;
   left:0;
   width: 100%;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  height:inline-block;
-}
-
-#home-icon{
-  padding: 5px;
-  height:30px;
-}
-
-#menu-container{
-  padding-left: 300px;
-  padding-right: 300px;
-}
-.menu-link-container{
-  position: inherit;
-  display: block;
-  flex-direction: row;
-  flex-grow: 1;
+  padding: 6px;
   text-align: center;
 }
+#menu-bar-container{
+  max-width: 2000px;
+}
 .menu-link{
+  text-align: center;
+  display: inline;
+  padding: 6px;
+  width: 20%;
+  cursor:pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-
-  padding: 6px;
-  position: relative;
-
-  cursor:pointer;
-
-}
-.menu-link:after {
-  content: '';
-  position: absolute;
-  display: block;
-  left:0;
-  right:0;
-  height: 3px;
-  width: 100%;
-  transform: scaleX(0);
-  transition: 0.5s  cubic-bezier(0.19, 1, 0.22, 1);
-  background: #2566C9;
-}
-.menu-link:hover:after{
-  transform: scaleX(1);
-	background: #2566C9;
 }
 
-.dropdown-container{
-  width:inherit;
-  transition: 0.5s  cubic-bezier(0.19, 1, 0.22, 1);
-  transform: scaleY(0);
-  overflow: hidden;
-  position: absolute;
-  background: rgba(256,256,256,1);
-  z-index: 3;
-  padding: 4px;
+#home-icon{
+  padding-right: 5px;
+  margin-bottom: -2px;
+  height:22px;
 }
-.menu-link-container:hover .dropdown-container {
-  transform: scaleY(1);
+#menu-underline{
+    position: static;
+    height: .25rem;
+    margin:0;
+    background: tomato;
+    transition: .3s ease-in-out;
+    visibility: hidden;
+    width: 0;
 }
-.dropdown-container a{
-  display: inline-block;
+
+#one:hover ~ #menu-underline {
+  visibility: visible;
+  margin-left: 3%;
+  width: 120px;
+}
+#two:hover ~ #menu-underline {
+  visibility: visible;
+  margin-left: 17%;
+  width: 180px;
+}
+#three:hover ~ #menu-underline {
+  visibility: visible;
+  margin-left: 35%;
+  width: 120px;
+}
+#four:hover ~ #menu-underline {
+  visibility: visible;
+  margin-left: 50%;
+  width: 120px;
+}
+#five:hover ~ #menu-underline {
+  visibility: visible;
+  margin-left: 66%;
+  width: 120px;
+}
+#six:hover ~ #menu-underline {
+  visibility: visible;
+  margin-left: 82%;
+  width: 120px;
 }
 
 body{
@@ -145,10 +142,6 @@ body{
 }
 #body-content{
   padding: 0;
-}
-#body-content p{
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 .body-section{
@@ -175,20 +168,20 @@ body{
   text-align: center;
 }
 #profile-photo{
-  width: 200px;
-  height: 200px;
-  margin-top:200px;
+  width: 17vmax;
+  margin-top: 15vh;
   border: 2px solid rgba(256,256,256,0.9);
-  border-radius: 200px;
+  border-radius: 50%;
 }
 #name{
+  padding-top: 5vh;
   color:white;
   font-weight: 800;
   font-size: 60px;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
 }
 
-#Projects-Section, #Resume-Section{
+#Projects-Section{
   background-color: #cee2eb;
 }
 
@@ -198,6 +191,7 @@ body{
 }
 .flex{
   display: flex;
+  flex-wrap: wrap;
 }
 .download-link{
   text-align: center;
@@ -219,31 +213,12 @@ a{
   cursor: pointer;
 }
 
-.heading, .subheading, .subsubheading{
-  font-weight: 800;
-}
+
 .heading{
-  font-size: 26px;
-}
-.subsubheading, .subheading{
+  font-weight: 800;
   font-size: 22px;
 }
 
-.heading:before{
-    content: '';
-    position: absolute;
-    height: 3px;
-    width: 200px;
-    background: grey;
-    bottom: -10px;
-}
-
-.heading:hover, .subheading:hover{
-  opacity: 0.9;
-}
-.subsubheading{
-  margin-left: 20px;
-}
 
 .anchor {
   display: block;
@@ -251,4 +226,42 @@ a{
   opacity: 0;
   z-index: -1;
   top:-105;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+}
+.accordion:hover {
+  background-color: #ccc;
+}
+.panel {
+  transition: max-height 0.5s;
+  max-height: 0;
+  padding: 0 18px;
+  margin: 0;
+  color:black;
+  background-color: white;
+  overflow: hidden;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: grey;
+  float: right;
+}
+
+.accordion:focus::after{
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.accordian + .panel:active,.accordion:focus + .panel,.panel:active{
+  max-height: 300px;;
 }
