@@ -5,10 +5,6 @@ html{
     -o-background-size: cover;
     background-size: cover;
 }
-::-webkit-scrollbar {
-    /*width: 0px;
-    background: transparent;*/
-}
 
 #grey{
   position: fixed;
@@ -75,18 +71,20 @@ html{
   width: 100%;
   padding-bottom: 6px;
   height:inline-block;
+  box-shadow:0 2px 6px #666;
 }
 #title{
   display:inline;
   white-space: nowrap;
   left:20px;
   font-weight: 400;
+  font-size: 60px;
 }
 
 .menu-link-container{
   display: block;
   float: left;
-
+  width: 220px;
   text-align: center;
 }
 .menu-link{
@@ -141,11 +139,16 @@ body{
 #body-text{
   z-index: 1;
   margin: auto;
+  padding-top:100px;
+}
 
+.width-controlled{
+  width:700px;
 }
 
 #resume{
   z-index: 1;
+  height: 910;
 }
 .flex{
   display: flex;
@@ -185,4 +188,5 @@ a{
   position: relative;
   opacity: 0;
   z-index: -1;
+  top:-90px;
 }

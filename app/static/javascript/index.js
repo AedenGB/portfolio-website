@@ -70,15 +70,14 @@ $(document).ready(function(){
     $("#grey").css("visibility","collapse");
     $("#grey").css("opacity","0");
   });
-});
 
-
-$(window).scroll(function() {
-  if($(window).scrollTop()>15){
-    $('#menu-bar').css('transition',"0.5s");
-    $('#menu-bar').css('box-shadow',"0 2px 6px #666");
-  }
-  else{
-    $('#menu-bar').css('box-shadow',"0 0");
-  }
+  $(window).scroll(function() {
+    if($(window).scrollTop()>15){
+      $('#menu-bar').css('transition',"0.5s");
+      $('#menu-bar').css('box-shadow',"0 2px 6px #666");
+    }
+    else{
+      $('#menu-bar').css('box-shadow',"0 0");
+    }
+  });
 });
