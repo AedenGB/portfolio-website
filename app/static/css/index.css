@@ -86,6 +86,7 @@ html{
   float: left;
   width: 220px;
   text-align: center;
+
 }
 .menu-link{
   -webkit-user-select: none;
@@ -97,6 +98,7 @@ html{
   position: relative;
 
   cursor:pointer;
+
 }
 .menu-link:after {
   content: '';
@@ -135,15 +137,35 @@ body{
   font-family: "Raleway",sans-serif;
   text-decoration: none;
   font-weight: 600;
+  padding: 0;
+  margin: 0;
 }
-#body-text{
-  z-index: 1;
-  margin: auto;
-  padding-top:100px;
+#body-content{
+  padding: 0;
+  padding-top: 100px;
+}
+#body-content img, p{
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
+.body-section{
+  width: 100%;
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+}
 .width-controlled{
   width:700px;
+  z-index: 1;
+  margin: auto;
+}
+
+#About-Me-Section{
+}
+
+#Projects-Section, #Resume-Section{
+  background-color: #cee2eb;
 }
 
 #resume{
@@ -176,6 +198,13 @@ a{
 .heading, .subheading, .subsubheading{
   font-weight: 800;
 }
+.heading{
+  font-size: 26px;
+}
+.subsubheading, .subheading{
+  font-size: 22px;
+}
+
 .heading:hover, .subheading:hover{
   color:#2566C9 !important;
 }
@@ -188,5 +217,5 @@ a{
   position: relative;
   opacity: 0;
   z-index: -1;
-  top:-90px;
+  top:-105;
 }

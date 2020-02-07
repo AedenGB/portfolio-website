@@ -19,6 +19,11 @@ $(document).ready(function(){
 
   function adjust_for_window_size() {
     var viewport_width = $(window).width();
+
+    $("html").css("font-size", viewport_width*0.0022+14);//set main font size, mostly for body-content
+    $(".heading").css("font-size", viewport_width*0.0045+20);//set heading font size
+    $(".subheading").css("font-size", viewport_width*0.004+14);//set subheading font size
+
     if(viewport_width<600){//will title be one or two lines
       $("#title-linebreak").html("<br>");//add linebreak
       $("#title").css("font-size", (viewport_width-70)*0.095);
@@ -40,12 +45,8 @@ $(document).ready(function(){
       $(".menu-link-container").css("width", (viewport_width-10)/2);
     }
 
-    $("#body-text").css("font-size", viewport_width*0.0022+14);//set text font size
-    $(".heading").css("font-size", viewport_width*0.0045+17);//set heading font size
-    $(".subheading").css("font-size", viewport_width*0.004+14);//set subheading font size
-
     var menu_height = $("#menu-bar").height();//based on height of elements in menu bar, adjust scroll characteristics
-    $("#body-text").css("padding-top", menu_height-10);
+    $("#body-content").css("padding-top", menu_height-10);
     $(".anchor").css("top",-menu_height);
 
     limit_element_size_to(".width-controlled", 700, 10, window);//all body text width controlled elements
