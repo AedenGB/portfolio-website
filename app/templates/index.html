@@ -24,9 +24,9 @@
     <div class = "popup-closer" id = "grey"></div>
 
     <div id = "menu-bar">
-      <a id = "title" class = "clickable" href = "#About-Me"><b style = "color:#2566C9">&nbsp;Aeden Gasser-Brennan</b><span id = "title-linebreak"></span>&nbsp;Mechanical Engineer</a>
-      <div>
-        <span class = "menu-link-container"><a class = "menu-link heading" href = "#About-Me">About Me</a></span>
+      <div class = "flex" id = "menu-container">
+        <span class = "menu-link-container"><a class = "menu-link heading" href = "#Homepage"><img class = "clickable" id = "home-icon" src="{{url_for('static', filename='images/home-icon.svg')}}"></a></span>
+
         <span class = "menu-link-container"><a class = "heading" href = "#Employment">Employment</a>
           <div class = "dropdown-container shadow">
             <a class = "menu-link subheading" href = "#Freelance-CAD">Freelance CAD</a><br>
@@ -34,6 +34,7 @@
             <a class = "menu-link subheading" href = "#CSU-Fullerton-Research">CSU Fullerton Research</a><br>
           </div>
         </span>
+
         <span class = "menu-link-container"><a class = "heading" href = "#Projects">Projects</a>
           <div class = "dropdown-container shadow">
             <a class = "menu-link subheading" href = "#Formula-Racing">Formula Racing</a><br>
@@ -42,6 +43,7 @@
             <a class = "menu-link subheading" href = "#FRC-Robotics">FRC Robotics</a><br>
           </div>
         </span>
+
         <span class = "menu-link-container"><a class = "menu-link heading" href = "#Education">Education</a></span>
         <span class = "menu-link-container"><a class = "menu-link heading" href = "#Resume">Resume</a></span>
         <span class = "menu-link-container"><a class = "menu-link heading" id = "contact-button">Contact</a></span>
@@ -50,8 +52,10 @@
 
     <div id = "body-content">
 
-      <div id = "About-Me-Section" class = "body-section">
-          <a class = "anchor" name="About-Me">a</a>
+      <div id = "Homepage-Section" class = "body-section">
+          <a class = "anchor" name="Homepage">a</a>
+          <img id = "profile-photo" src = "{{url_for('static', filename='images/profile-photo.jpg')}}">
+          <p id = "name">Aeden Gasser-Brennan</p>
       </div>
 
       <div id = "Employment-Section" class = "body-section">

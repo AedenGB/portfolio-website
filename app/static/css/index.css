@@ -69,25 +69,26 @@ html{
   top:0;
   left:0;
   width: 100%;
+  padding-top: 6px;
   padding-bottom: 6px;
   height:inline-block;
-  box-shadow:0 2px 6px #666;
-}
-#title{
-  display:inline;
-  white-space: nowrap;
-  left:20px;
-  font-weight: 400;
-  font-size: 60px;
-  display: none;
 }
 
+#home-icon{
+  padding: 5px;
+  height:30px;
+}
+
+#menu-container{
+  padding-left: 300px;
+  padding-right: 300px;
+}
 .menu-link-container{
+  position: inherit;
   display: block;
-  float: left;
-  width: 220px;
+  flex-direction: row;
+  flex-grow: 1;
   text-align: center;
-
 }
 .menu-link{
   -webkit-user-select: none;
@@ -95,7 +96,7 @@ html{
   -ms-user-select: none;
   user-select: none;
 
-  padding-bottom: 6px;
+  padding: 6px;
   position: relative;
 
   cursor:pointer;
@@ -124,8 +125,9 @@ html{
   transform: scaleY(0);
   overflow: hidden;
   position: absolute;
-  background: white;
+  background: rgba(256,256,256,1);
   z-index: 3;
+  padding: 4px;
 }
 .menu-link-container:hover .dropdown-container {
   transform: scaleY(1);
@@ -143,9 +145,8 @@ body{
 }
 #body-content{
   padding: 0;
-  padding-top: 100px;
 }
-#body-content img, p{
+#body-content p{
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -166,11 +167,25 @@ body{
   margin: auto;
 }
 
-#About-Me-Section{
+#Homepage-Section{
   height:100%;
   width: 100%;
   background-image: url("/static/images/background.jpg");
   background-size: cover;
+  text-align: center;
+}
+#profile-photo{
+  width: 200px;
+  height: 200px;
+  margin-top:200px;
+  border: 2px solid rgba(256,256,256,0.9);
+  border-radius: 200px;
+}
+#name{
+  color:white;
+  font-weight: 800;
+  font-size: 60px;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
 }
 
 #Projects-Section, #Resume-Section{
@@ -200,7 +215,7 @@ a{
 }
 
 .clickable:hover{
-  opacity: 0.75;
+  opacity: 0.7;
   cursor: pointer;
 }
 
@@ -214,8 +229,17 @@ a{
   font-size: 22px;
 }
 
+.heading:before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 200px;
+    background: grey;
+    bottom: -10px;
+}
+
 .heading:hover, .subheading:hover{
-  color:#2566C9 !important;
+  opacity: 0.9;
 }
 .subsubheading{
   margin-left: 20px;

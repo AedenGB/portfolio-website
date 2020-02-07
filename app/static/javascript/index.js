@@ -1,6 +1,7 @@
 $(document).ready(function(){
   $('html').hide();
   $('html').fadeIn(1000);
+  $('#menu-bar').css("background", "rgba(256,256,256,0)");
 
   $.localScroll({
      target:'body',
@@ -19,35 +20,15 @@ $(document).ready(function(){
 
   function adjust_for_window_size() {
     var viewport_width = $(window).width();
+    var viewport_height = $(window).height();
 
     $("html").css("font-size", viewport_width*0.0022+14);//set main font size, mostly for body-content
-    $(".heading").css("font-size", viewport_width*0.0045+20);//set heading font size
+    $(".heading").css("font-size", viewport_width*0.0045+15);//set heading font size
+    $("#home-icon").css("height", viewport_width*0.0045+15);
     $(".subheading").css("font-size", viewport_width*0.004+14);//set subheading font size
 
-    if(viewport_width<600){//will title be one or two lines
-      $("#title-linebreak").html("<br>");//add linebreak
-      $("#title").css("font-size", (viewport_width-70)*0.095);
-    }
-    else{
-      $("#title-linebreak").html("");//no linebreak
-      $("#title").css("font-size", (viewport_width-40)*0.049);
-    }
-
-    var normal_menu_link_width = 220;
-
-    if(viewport_width>normal_menu_link_width*6){//all menu links inline with eachother
-      $(".menu-link-container").css("width", (viewport_width-10)/6);
-    }
-    else if(viewport_width>normal_menu_link_width*3){//two rows of 3
-      $(".menu-link-container").css("width", (viewport_width-10)/3);
-    }
-    else{//3 rows of 2
-      $(".menu-link-container").css("width", (viewport_width-10)/2);
-    }
-
     var menu_height = $("#menu-bar").height();//based on height of elements in menu bar, adjust scroll characteristics
-    $("#body-content").css("padding-top", menu_height-10);
-    $(".anchor").css("top",-menu_height);
+    $(".anchor").css("top",-menu_height-10);
 
     limit_element_size_to(".width-controlled", 700, 10, window);//all body text width controlled elements
     limit_element_size_to("#contact-popup", 400, 10, window);//contact popup width limit
@@ -73,12 +54,17 @@ $(document).ready(function(){
   });
 
   $(window).scroll(function() {
-    if($(window).scrollTop()>15){
-      $('#menu-bar').css('transition',"0.5s");
-      $('#menu-bar').css('box-shadow',"0 2px 6px #666");
+    var menu_height = $("#menu-bar").height();
+    var bottom_of_element = $("#Homepage-Section").offset().top + $("#Homepage-Section").outerHeight();
+    var top_of_screen = $(window).scrollTop();
+
+    if (top_of_screen < bottom_of_element-menu_height*6){
+      $('#menu-bar, .dropdown-container').css('box-shadow',"0 0");
+      $('#menu-bar, .dropdown-container').css('background',"rgba(256,256,256,0.0)");
+    } else {
+      $('#menu-bar, .dropdown-container').css('transition',"0.2s");
+      $('#menu-bar, .dropdown-container').css('box-shadow',"0 2px 6px #666");
+      $('#menu-bar, .dropdown-container').css('background',"rgba(256,256,256,1)");
     }
-    else{
-      $('#menu-bar').css('box-shadow',"0 0");
-    }
-  });
+});
 });
