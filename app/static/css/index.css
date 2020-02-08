@@ -1,3 +1,13 @@
+:root{
+  --main-color: #4d4e53;
+
+
+    --body-width:700px;
+
+  --heading-font-size: calc((1vw)*0.75 + 10px);
+  --section-heading-font-size: calc((1vw)*0.75 + 18px);
+}
+
 html{
     background: white;
     -webkit-background-size: cover;
@@ -21,14 +31,13 @@ html{
 
   z-index: 4;
 }
-
 #contact-popup{
   z-index: 5;
 
   position: fixed;
   left:50%;
   top:15%;
-  transition: 0.5s;
+  transition: visibility 0.5s;
   transform: translate(-50%, 0);
 
   max-width: 0;
@@ -41,7 +50,7 @@ html{
 
   font-size: 25px;
   text-align: center;
-  font-weight: bolder;
+
 }
 #close-window-icon{
   right:0;
@@ -57,7 +66,6 @@ html{
 #linkedin-logo{
   height: 30px;
 }
-
 .shadow{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -70,16 +78,15 @@ html{
   left:0;
   width: 100%;
   padding: 6px;
-  text-align: center;
-}
-#menu-bar-container{
-  max-width: 2000px;
 }
 .menu-link{
-  text-align: center;
+  opacity: 0.6;
   display: inline;
-  padding: 6px;
+  text-align: center;
+  padding-left: 6px;
+  padding-right: 6px;
   width: 20%;
+
   cursor:pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -90,53 +97,23 @@ html{
 #home-icon{
   padding-right: 5px;
   margin-bottom: -2px;
-  height:22px;
+  height: var(--section-heading-font-size);
 }
 #menu-underline{
-    position: static;
+    position: absolute;
     height: .25rem;
     margin:0;
     background: tomato;
     transition: .3s ease-in-out;
-    visibility: hidden;
-    width: 0;
-}
-
-#one:hover ~ #menu-underline {
-  visibility: visible;
-  margin-left: 3%;
-  width: 120px;
-}
-#two:hover ~ #menu-underline {
-  visibility: visible;
-  margin-left: 17%;
-  width: 180px;
-}
-#three:hover ~ #menu-underline {
-  visibility: visible;
-  margin-left: 35%;
-  width: 120px;
-}
-#four:hover ~ #menu-underline {
-  visibility: visible;
-  margin-left: 50%;
-  width: 120px;
-}
-#five:hover ~ #menu-underline {
-  visibility: visible;
-  margin-left: 66%;
-  width: 120px;
-}
-#six:hover ~ #menu-underline {
-  visibility: visible;
-  margin-left: 82%;
-  width: 120px;
+    padding: 0;
 }
 
 body{
-  font-family: "Raleway",sans-serif;
+  color: gray;
+  font-size: 16px;
+  font-family: "Open+Sans",sans-serif;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: Regular;
   padding: 0;
   margin: 0;
 }
@@ -147,17 +124,20 @@ body{
 .body-section{
   width: 100%;
   z-index: 1;
-  padding: 0;
   margin: 0;
-  top:0;
-  bottom: 0;
   overflow: hidden;
 }
-.width-controlled{
-  width:700px;
+.text-container{
+  max-width:var(--body-width);
   z-index: 1;
   padding:0;
+  padding-left: 10px;
+  padding-right: 10px;
   margin: auto;
+}
+.inline-object{
+  width: 100%;
+  margin: 10px;
 }
 
 #Homepage-Section{
@@ -176,19 +156,37 @@ body{
 #name{
   padding-top: 5vh;
   color:white;
-  font-weight: 800;
   font-size: 60px;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
 }
 
+#Employment-Section{
+  padding-top:70px;
+}
 #Projects-Section{
   background-color: #cee2eb;
+}
+#Education-Section{
+  background-color: #eee;
+}
+#Resume-Section{
+
 }
 
 #resume{
   z-index: 1;
-  height: 910;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%
 }
+#resume-container{
+  padding-top: 130%;
+  position: relative;
+}
+
 .flex{
   display: flex;
   flex-wrap: wrap;
@@ -198,7 +196,6 @@ body{
   flex-direction: row;
   flex-grow: 1;
 }
-
 a{
   color:black;
   text-decoration: none;
@@ -208,24 +205,27 @@ a{
   color: #2566C9;
 }
 
-.clickable:hover{
-  opacity: 0.7;
-  cursor: pointer;
-}
-
-
 .heading{
-  font-weight: 800;
-  font-size: 22px;
+  font-size: var(--heading-font-size);
 }
-
+.section-heading{
+  font-size: var(--section-heading-font-size);
+}
+.section-heading:before{
+  position: absolute;
+  height: 3px;
+  width: 200px;
+  content: '';
+  background-color: grey;
+  transform: translateY(-5px);
+}
 
 .anchor {
   display: block;
   position: relative;
   opacity: 0;
   z-index: -1;
-  top:-105;
+  top:-45;
 }
 
 .accordion {
@@ -249,19 +249,18 @@ a{
   color:black;
   background-color: white;
   overflow: hidden;
+  border: none;
 }
-
 .accordion:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
+  content: '+';
+  font-size: 30px;
   color: grey;
   float: right;
 }
-
 .accordion:focus::after{
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
+  content: "-";
 }
-
-.accordian + .panel:active,.accordion:focus + .panel,.panel:active{
-  max-height: 300px;;
+.accordion + .panel:active,.accordion:focus + .panel,.panel:active{
+  max-height: 200px;
+  border: solid 1px grey;
 }
