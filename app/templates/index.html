@@ -1,4 +1,5 @@
-<html id = 'html'>
+<!DOCTYPE html>
+<html>
   <head>
     <title>Aeden Gasser-Brennan</title>
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
@@ -14,14 +15,6 @@
     </head>
 
   <body>
-    <div id = "contact-popup" class = "shadow">
-      <img class = "clickable popup-closer" id = "close-window-icon" src="{{url_for('static', filename='images/close-window-icon.png')}}">
-      <div style = "height:20px"></div>
-      <p><a class = "external-link" href = "mailto:aeden.gb@gmail.com">aeden.gb@gmail.com</a></p>
-      <p><a class = "external-link" href = "tel:3234583881">(323) 458 - 3881</a></p>
-      <p><a class = "external-link clickable" href = "https://www.linkedin.com/in/aedengasserbrennan/"><img id = "linkedin-logo" src="{{url_for('static', filename='images/linkedin-logo.png')}}"></a></p>
-    </div>
-    <div class = "popup-closer" id = "grey"></div>
 
     <div id = "menu-bar">
       <div>
@@ -30,7 +23,7 @@
         <a class = "menu-link heading" href = "#Projects">Projects</a>
         <a class = "menu-link heading" href = "#Education">Education</a>
         <a class = "menu-link heading" href = "#Resume">Resume</a>
-        <a class = "menu-link heading" href = "#Contact" id = "contact-button">Contact</a>
+        <a class = "menu-link heading" href = "#Contact">Contact</a>
         <div id = "menu-underline"></div>
       </div>
     </div>
@@ -39,7 +32,7 @@
 
       <div id = "Homepage-Section" class = "body-section">
           <a class = "anchor" name="Homepage">a</a>
-          <img id = "profile-photo" src = "{{url_for('static', filename='images/profile-photo.jpg')}}">
+          <img id = "profile-photo" class = "shadow" src = "{{url_for('static', filename='images/profile-photo.jpg')}}">
           <p id = "name">Aeden Gasser-Brennan</p>
       </div>
 
@@ -133,10 +126,17 @@
             <span class = "download-link"><a target="_blank" class = "menu-link" href = "{{url_for('static', filename='documents/resume.pdf')}}">PDF</a></span>
             <span class = "download-link"><a class = "menu-link" href = "{{url_for('static', filename='documents/resume.docx')}}">DOCX</a></span>
           </p>
-          <p id = "resume-container">
+          <div id = "resume-container">
             <embed id = "resume" class = "inline-object shadow" type='application/pdf' src="{{url_for('static', filename='documents/resume.pdf')}}#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0&scrollbar=0">
-          </p>
+          </div>
         </div>
+      </div>
+
+      <div id = "Contact-Section" class = "body-section">
+          <a class = "anchor" name="Contact">a</a>
+          <div class = "flex">
+            <button class = "floating-button">this is a test</button>
+          </div>
       </div>
 
     </div>

@@ -20,8 +20,11 @@ $(document).ready(function(){
     var projects = $("#Projects-Section").offset().top;
     var education = $("#Education-Section").offset().top;
     var resume = $("#Resume-Section").offset().top;
+    var contact = $("#Contact-Section").offset().top;
+    var window_height = $(window).height();
 
-
+    console.log(contact-window_height);
+    console.log(top_of_screen);
     if($(".menu-link[href='#Homepage']:hover").length != 0){
       underline_position = "#Homepage";
     }else if($(".menu-link[href='#Employment']:hover").length != 0){
@@ -35,7 +38,7 @@ $(document).ready(function(){
     }else if($(".menu-link[href='#Contact']:hover").length != 0){
       underline_position = "#Contact";
     }
-    else if($("#contact-popup").css("max-width") != '0px'){
+    else if (top_of_screen > contact-window_height){
       underline_position = "#Contact";
     }else if (top_of_screen > resume-menu_height){
       underline_position = "#Resume";
@@ -60,9 +63,9 @@ $(document).ready(function(){
     var homepage_bottom = $("#Homepage-Section").offset().top + $("#Homepage-Section").outerHeight();
 
     if (top_of_screen < homepage_bottom){
-      $('#menu-bar').css('background',"rgba(256,256,256,0.0)");
+      $('#menu-bar').css('background',"rgba(256,256,256,0)");
     } else {
-      $('#menu-bar').css('background',"rgba(256,256,256,1)");
+      $('#menu-bar').css('background',"rgba(256,256,256,.9)");
     }
   }
   function all_actions() {
@@ -74,18 +77,4 @@ $(document).ready(function(){
   all_actions();
 
   $(window).on('mousemove scroll resize', all_actions);
-
-  $("#contact-button").on( "click", function(){//if contact us button pressed, open popup
-    $("#contact-popup").css("max-width","400");
-    $("#grey").css("visibility","visible");
-    $("#grey").css("opacity","0.6");
-  });
-  $(".popup-closer").on( "click", function(){//if grey box clicked while popup open, close popup
-    $("#contact-popup").css("max-width","0");
-    $("#grey").css("visibility","collapse");
-    $("#grey").css("opacity","0");
-
-    all_actions();
-    console.log(underline_position);
-  });
 });
