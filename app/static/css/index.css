@@ -3,7 +3,6 @@
 
   --light-background-color:white;
   --dark-background-color:#f7f7f7;
-  --menu-color:#f0f0f0;
 
   --lightest-element-color:#e8e8e8;
   --light-element-color:#d6d6d6;
@@ -14,9 +13,10 @@
   --light-text-color:#8a8a8a;
   --name-color:#fcfcfc;
 
-  --highlight-color:#007dd1;
+  --scroll-underline-color:#007dd1;
 
-  --normal-font-size: 16px;;
+  --normal-font-size: 16px;
+  --icon-font-size: 14px;
   --heading-font-size: calc((1vw)*0.6 + 10px);
   --section-heading-font-size: calc((1vw)*0.6 + 18px);
 }
@@ -56,6 +56,10 @@ html{
   user-select: none;
 }
 
+.icon{
+  height: var(--icon-font-size);
+  margin-right: 8px;
+}
 #home-icon{
   opacity: 0.6;
   padding-right: 5px;
@@ -66,7 +70,7 @@ html{
     position: absolute;
     height: 4px;
     margin:0;
-    background: var(--highlight-color);
+    background: var(--scroll-underline-color);
     padding: 0;
     transition: .3s ease-in-out;
 }
@@ -115,65 +119,39 @@ body{
   border-radius: 50%;
 }
 #name{
-  padding-top: 3vh;
+  display: block;
+  padding-top: 1vh;
   color:var(--name-color);
   font-size: 60px;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+
 }
 
-#Employment-Section{
+#Education-Section{
   padding-top:50px;
+  background-color: var(--light-background-color);
+}
+#Skills-Section{
+  background-color: var(--dark-background-color);
+}
+#Employment-Section{
   background-color: var(--light-background-color);
 }
 #Projects-Section{
   background-color: var(--dark-background-color);
 }
-#Education-Section{
-  background-color: var(--light-background-color);
-}
-#Resume-Section{
-  background-color: var(--dark-background-color)
-}
+
 #Contact-Section{
   height:27vh;
   width: 100%;
   background-image: url("/static/images/background-bottom.jpg");
   background-size: cover;
   text-align: center;
+  vertical-align: center;
 }
 
-#resume{
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 100%
-}
-#resume-container{
-  max-width: 700px !important;
-  padding-top: 130%;
-  position: relative;
-  margin-bottom: 10%;
-}
-
-.flex{
-  display: flex;
-  flex-wrap: wrap;
-}
-.download-link{
-  text-align: center;
-  flex-direction: row;
-  flex-grow: 1;
-}
 a{
-  color:var(--dark-text-color);
   text-decoration: none;
-}
-.external-link:hover{
-  opacity: 0.6;
-  color: var(--highlight-color);
 }
 
 .heading{
@@ -207,22 +185,32 @@ button{
   color: var(--light-text-color);
 }
 
+.button-container{
+  display: inline-block;
+  border-top: solid 1px grey;
+  padding-top: 10px;
+  margin-top: 10px;
+  box-shadow: 0px -1px white;
+}
 .floating-button{
   color: var(--dark-text-color);
   background-color: var(--light-element-color);
-  opacity: 0.7;
-  padding:20px;
+  opacity: 1;
+  padding:10px 20px;;
+  margin: 5px;
   border: none;
   border-radius: 6px;
   transition: .2s ease-in-out;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .floating-button:hover{
   color: var(--dark-text-color);
   background-color: var(--lightest-element-color);
   opacity: 1;
-}
-.floating-button:active{
-  background-color: white;
 }
 
 .accordion {
@@ -252,7 +240,7 @@ button{
   font-size: 30px;
   color: var(--dark-text-color);
   float: right;
-  transition: transform 0.5s;
+  transition: transform 0.35s;
 }
 .accordion:focus::after{
   transform: rotate(45deg);

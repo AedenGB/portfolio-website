@@ -19,10 +19,10 @@
     <div id = "menu-bar">
       <div>
         <a class = "menu-link heading" href = "#Homepage"><img class = "clickable" id = "home-icon" src="{{url_for('static', filename='images/home-icon.svg')}}"></a>
+        <a class = "menu-link heading" href = "#Education">Education</a>
+        <a class = "menu-link heading" href = "#Skills">Skills</a>
         <a class = "menu-link heading" href = "#Employment">Employment</a>
         <a class = "menu-link heading" href = "#Projects">Projects</a>
-        <a class = "menu-link heading" href = "#Education">Education</a>
-        <a class = "menu-link heading" href = "#Resume">Resume</a>
         <a class = "menu-link heading" href = "#Contact">Contact</a>
         <div id = "menu-underline"></div>
       </div>
@@ -33,7 +33,47 @@
       <div id = "Homepage-Section" class = "body-section">
           <a class = "anchor" name="Homepage">a</a>
           <img id = "profile-photo" class = "shadow" src = "{{url_for('static', filename='images/profile-photo.jpg')}}">
-          <p id = "name">Aeden Gasser-Brennan</p>
+          <span id = "name">Aeden Gasser-Brennan</span>
+          <div class = "button-container">
+            <a target="_blank" href = "{{url_for('static', filename='documents/resume.pdf')}}"><button class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/document-icon.png')}}">RESUME</button></a>
+            <a href = "mailto:aedengb@gmail.com"><button class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/mail-icon.png')}}">EMAIL</button></a>
+            <a target="_blank" href = "https://www.linkedin.com/in/aedengasserbrennan/"><button class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/linkedin-icon.png')}}">LINKEDIN</button></a>
+          </div>
+     </div>
+
+      <div id = "Education-Section" class = "body-section">
+        <div class = "text-container">
+          <a class = "anchor" name="Education">a</a>
+          <a class = "section-heading" href = "#Education">Education</a>
+
+
+          <p>this is filler</p>
+
+        </div>
+      </div>
+
+      <div id = "Skills-Section" class = "body-section">
+        <div class = "text-container">
+          <a class = "anchor" name="Skills">a</a>
+          <a class = "section-heading" href = "#Skills">Education</a>
+          <div class = "inline-object">
+            <button class="accordion">Fall 2019</button>
+              <div class="panel">
+                  <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2019-fall-engin-25-001-lec-001">ENGIN 25 - Visualization for Design</a></p>
+                  <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2019-fall-math-54-003-lec-003">MATH 54 - Linear Algebra and Diffrential Equations</a></p>
+                  <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2019-fall-chem-1a-002-lec-002">CHEM 1A - General Chemistry</a></p>
+                  <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2019-fall-chem-1al-001-lec-001">CHEM 1AL - General Chemistry Laboratory</a></p>
+                  <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2019-fall-german-1-006-lec-006">German 1 - Introductory German 1</a></p>
+              </div>
+
+            <button class="accordion">Spring 2020</button>
+              <div class="panel">
+                  <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2020-spring-engin-7-001-lec-001">ENGIN 7 - Introduction to Computer Programming for Scientists and Engineers</a></p>
+                  <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2020-spring-math-53-001-lec-001">MATH 53 - Multivariable Calculus</a></p>
+                  <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2020-spring-physics-7b-001-lec-001">PHYSICS 7B - Physics for Scientists and Engineers</a></p>
+                  <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2020-spring-german-2-002-lec-002">German 2 - Introductory German 2</a></p>
+              </div>
+          </div>
       </div>
 
       <div id = "Employment-Section" class = "body-section">
@@ -94,49 +134,12 @@
         </div>
       </div>
 
-      <div id = "Education-Section" class = "body-section">
-        <div class = "text-container">
-          <a class = "anchor" name="Education">a</a>
-          <a class = "section-heading" href = "#Education">Education</a>
-
-          <button class="accordion">Fall 2019</button>
-          <div class="panel">
-              <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2019-fall-engin-25-001-lec-001">ENGIN 25 - Visualization for Design</a></p>
-              <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2019-fall-math-54-003-lec-003">MATH 54 - Linear Algebra and Diffrential Equations</a></p>
-              <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2019-fall-chem-1a-002-lec-002">CHEM 1A - General Chemistry</a></p>
-              <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2019-fall-chem-1al-001-lec-001">CHEM 1AL - General Chemistry Laboratory</a></p>
-              <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2019-fall-german-1-006-lec-006">German 1 - Introductory German 1</a></p>
-          </div>
-
-        <button class="accordion">Spring 2020</button>
-          <div class="panel">
-            <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2020-spring-engin-7-001-lec-001">ENGIN 7 - Introduction to Computer Programming for Scientists and Engineers</a></p>
-            <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2020-spring-math-53-001-lec-001">MATH 53 - Multivariable Calculus</a></p>
-            <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2020-spring-physics-7b-001-lec-001">PHYSICS 7B - Physics for Scientists and Engineers</a></p>
-            <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2020-spring-german-2-002-lec-002">German 2 - Introductory German 2</a></p>
-          </div>
-
-      </div>
-
-      <div id = "Resume-Section" class = "body-section">
-        <div class = "text-container">
-          <a class = "anchor" name="Resume">a</a>
-          <a class = "section-heading" href = "#Resume">Resume</a>
-          <p class = "flex">
-            <span class = "download-link"><a target="_blank" class = "menu-link" href = "{{url_for('static', filename='documents/resume.pdf')}}">PDF</a></span>
-            <span class = "download-link"><a class = "menu-link" href = "{{url_for('static', filename='documents/resume.docx')}}">DOCX</a></span>
-          </p>
-          <div id = "resume-container">
-            <embed id = "resume" class = "inline-object shadow" type='application/pdf' src="{{url_for('static', filename='documents/resume.pdf')}}#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0&scrollbar=0">
-          </div>
-        </div>
-      </div>
-
       <div id = "Contact-Section" class = "body-section">
           <a class = "anchor" name="Contact">a</a>
-          <div class = "flex">
-            <button class = "floating-button">this is a test</button>
-          </div>
+          <a href = "mailto:aeden.gb@gmail.com"><button class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/mail-icon.png')}}">aeden.gb@gmail.com</button></a>
+          <a href = "mailto:aedengb@berkeley.edu"><button class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/mail-icon.png')}}">aedengb@berkeley.edu</button></a>
+          <a target="_blank" href = "{{url_for('static', filename='documents/resume.pdf')}}"><button class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/document-icon.png')}}">Resume</button></a>
+          <a target="_blank" href = "https://www.linkedin.com/in/aedengasserbrennan/"><button class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/linkedin-icon.png')}}">Linkedin</button></a>
       </div>
 
     </div>
