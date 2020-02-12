@@ -6,23 +6,23 @@
 
   --lightest-element-color:#e8e8e8;
   --light-element-color:#d6d6d6;
-  --dark-element-color:#a6a6a6;
 
   --dark-text-color:black;
   --medium-text-color:rgba(0,0,0,0.7);
   --light-text-color:#8a8a8a;
   --name-color:#fcfcfc;
+  --transparent-button-color:rgba(214,214,214,0.7);
 
   --scroll-underline-color:#007dd1;
 
   --normal-font-size: 16px;
-  --icon-font-size: 14px;
-  --heading-font-size: calc((1vw)*0.6 + 10px);
+  --button-font-size: 14px;
+  --icon-font-size: 13px;
+  --heading-font-size: calc((1vw)*0.6 + 12px);
   --section-heading-font-size: calc((1vw)*0.6 + 18px);
 }
 
 html{
-    background: white;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -77,11 +77,13 @@ html{
 
 body{
   font-size: var(--normal-font-size);
-  font-family: "Open+Sans",sans-serif;
   text-decoration: none;
-  font-weight: Regular;
   padding: 0;
   margin: 0;
+}
+
+body, button{
+    font-family: 'Lato', sans-serif;
 }
 #body-content{
   padding: 0;
@@ -114,8 +116,8 @@ body{
   text-align: center;
 }
 #profile-photo{
-  width: 17vmax;
-  margin-top: 15vh;
+  width: 13vmax;
+  margin-top: 22vh;
   border-radius: 50%;
 }
 #name{
@@ -124,7 +126,7 @@ body{
   color:var(--name-color);
   font-size: 60px;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
-
+  font-family: Arial, sans-serif;
 }
 
 #Education-Section{
@@ -146,8 +148,7 @@ body{
   width: 100%;
   background-image: url("/static/images/background-bottom.jpg");
   background-size: cover;
-  text-align: center;
-  vertical-align: center;
+  position: relative;
 }
 
 a{
@@ -181,22 +182,33 @@ a{
 }
 
 button{
-  font-size: var(--normal-font-size);
-  color: var(--light-text-color);
+  font-size: var(--button-font-size);
 }
 
+#contact-button-container{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
 .button-container{
   display: inline-block;
   border-top: solid 1px grey;
-  padding-top: 10px;
-  margin-top: 10px;
+  padding-top: 20px;
+  margin-top: 20px;
   box-shadow: 0px -1px white;
 }
 .floating-button{
+  font-weight: 100;
+  letter-spacing: 2px;
   color: var(--dark-text-color);
-  background-color: var(--light-element-color);
-  opacity: 1;
-  padding:10px 20px;;
+  background-color: var(--transparent-button-color);
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
   margin: 5px;
   border: none;
   border-radius: 6px;
@@ -209,12 +221,11 @@ button{
 }
 .floating-button:hover{
   color: var(--dark-text-color);
-  background-color: var(--lightest-element-color);
-  opacity: 1;
+  background-color: var(--light-background-color);
 }
 
 .accordion {
-  background-color: var(--light-element-color);
+  background-color: var(--lightest-element-color);
   color: var(--dark-text-color);
   cursor: pointer;
   padding: 18px;
@@ -224,14 +235,14 @@ button{
   outline: none;
 }
 .accordion:hover {
-  background-color: var(--dark-element-color);
+  background-color: var(--light-element-color);
 }
 .panel {
   transition: max-height 0.5s;
   max-height: 0;
   padding: 0 18px;
   margin: 0;
-  background-color: var(--lightest-element-color);
+  background-color: var(--light-background-color);
   overflow: hidden;
   border: none;
 }

@@ -4,7 +4,7 @@
     <title>Aeden Gasser-Brennan</title>
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 
@@ -55,7 +55,7 @@
       <div id = "Skills-Section" class = "body-section">
         <div class = "text-container">
           <a class = "anchor" name="Skills">a</a>
-          <a class = "section-heading" href = "#Skills">Education</a>
+          <a class = "section-heading" href = "#Skills">Skills</a>
           <div class = "inline-object">
             <button class="accordion">Fall 2019</button>
               <div class="panel">
@@ -136,10 +136,12 @@
 
       <div id = "Contact-Section" class = "body-section">
           <a class = "anchor" name="Contact">a</a>
-          <a href = "mailto:aeden.gb@gmail.com"><button class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/mail-icon.png')}}">aeden.gb@gmail.com</button></a>
-          <a href = "mailto:aedengb@berkeley.edu"><button class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/mail-icon.png')}}">aedengb@berkeley.edu</button></a>
-          <a target="_blank" href = "{{url_for('static', filename='documents/resume.pdf')}}"><button class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/document-icon.png')}}">Resume</button></a>
-          <a target="_blank" href = "https://www.linkedin.com/in/aedengasserbrennan/"><button class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/linkedin-icon.png')}}">Linkedin</button></a>
+          <div id = "contact-button-container">
+            <a href = "mailto:aeden.gb@gmail.com"><button class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/mail-icon.png')}}">AEDEN.GB@GMAIL.COM</button></a>
+            <a href = "mailto:aedengb@berkeley.edu"><button class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/mail-icon.png')}}">AEDENGB@BERKELEY.EDU</button></a>
+            <a target="_blank" href = "{{url_for('static', filename='documents/resume.pdf')}}"><button class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/document-icon.png')}}">RESUME</button></a>
+            <a target="_blank" href = "https://www.linkedin.com/in/aedengasserbrennan/"><button class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/linkedin-icon.png')}}">LINKEDIN</button></a>
+          </div>
       </div>
 
     </div>
