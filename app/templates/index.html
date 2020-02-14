@@ -2,11 +2,10 @@
 <html>
   <head>
     <title>Aeden Gasser-Brennan</title>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-
-    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700&display=swap" rel="stylesheet">
 
     <script src="{{url_for('static', filename='plugins/jquery.scrollTo.min.js')}}"></script>
     <script src="{{url_for('static', filename='plugins/jquery.localScroll.min.js')}}"></script>
@@ -46,33 +45,75 @@
           <a class = "anchor" name="Education">a</a>
           <a class = "section-heading" href = "#Education">Education</a>
 
+          <p>
+            <img class = "inline-image" src = "{{url_for('static', filename='images/berkeley-engineering-logo.JPG')}}">
+            I am currently a Freshman in the <a class = "inline-link" target="_blank" href = "https://engineering.berkeley.edu/">UC Berkeley College of Engineering<a> pursuing a B.S.E. in Mechanical Engineering, with an intended double major in Applied Mathematics, in the <a class = "inline-link" target="_blank" href = "https://ls.berkeley.edu/">UC Berkeley College of Letters & Sciences</a>.
+          </p>
+          <p>
+            I have been awarded the <a class = "inline-link" target="_blank" href = "https://financialaid.berkeley.edu/regents-and-chancellors-scholarship">UC Berkeley Regents Scholarship<a>, given to the top 2% of every UC Berkeley class. On campus, I am a member of the <a class = "inline-link" target="_blank" href = "https://asme.berkeley.edu/">Berkeley Chapter</a> of the American Society of Mechanical Engineers, as well as the school <a class = "inline-link" target="_blank" href = "https://fsae.berkeley.edu/">Formula SAE Team</a>. I am also a research assistant in the <a class = "inline-link" target="_blank" href = "https://taflab.berkeley.edu/">Berkeley Theoretical and Applied Fluid Dynamics Laboratory<a>.
 
-          <p>this is filler</p>
+          </p>
+          <p>
+            In high school, I was a <a class = "inline-link" target="_blank" href = "https://educationaladvancement.org/blog-announcing-the-2014-caroline-d-bradley-scholars/">Caroline D. Bradley Scholar<a>, which paid four years of private high school tuition at <a class = "inline-link" target="_blank" href = "https://hw.com">Harvard Westlake<a>.
+          </p>
 
         </div>
       </div>
 
       <div id = "Skills-Section" class = "body-section">
-        <div class = "text-container">
+        <div class = "text-container column-container">
           <a class = "anchor" name="Skills">a</a>
-          <a class = "section-heading" href = "#Skills">Skills</a>
-          <div class = "inline-object">
-            <button class="accordion">Fall 2019</button>
-              <div class="panel">
-                  <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2019-fall-engin-25-001-lec-001">ENGIN 25 - Visualization for Design</a></p>
-                  <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2019-fall-math-54-003-lec-003">MATH 54 - Linear Algebra and Diffrential Equations</a></p>
-                  <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2019-fall-chem-1a-002-lec-002">CHEM 1A - General Chemistry</a></p>
-                  <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2019-fall-chem-1al-001-lec-001">CHEM 1AL - General Chemistry Laboratory</a></p>
-                  <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2019-fall-german-1-006-lec-006">German 1 - Introductory German 1</a></p>
-              </div>
+          <div class = "column">
+            <a class = "section-heading" href = "#Skills">Skills<br></a>
+            <a class = "anchor" name="CAD-Software">a</a>
+            <a class = "heading" href = "#CAD-Software">CAD Software</a>
+            <p class = "condensed">
+              Autodesk Inventor<br>
+              Solidworks<br>
+              Grabcad<br>
+              Autodesk Vault<br>
+            </p>
+            <a class = "anchor" name="Machining-Experience">a</a>
+            <a class = "heading" href = "#Machining-Experience">Machining Experience</a>
+            <p class = "condensed">
+              3, 5-axis CNC Mill<br>
+              Laser Cutter<br>
+              Waterjet<br>
+              3D Printer<br>
+              CNC Lathe<br>
+              CNC Brake Press<br>
+            </p>
+            <a class = "anchor" name="Programming-Languages">a</a>
+            <a class = "heading" href = "#Programming-Languages">Programming/Markup Languages</a>
+            <p class = "condensed">
+              MATLAB<br>
+              Python<br>
+              Java<br>
+              JavaScript<br>
+              HTML/CSS<br>
+              LATEX<br>
+            </p>
+          </div>
+          <div class = "column">
+            <a class = "section-heading" href = "#Skills">Relevant Coursework</a>
+            <div class = "inline-object">
+                <button class="accordion">Fall 2019</button>
+                  <div class="panel">
+                      <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2019-fall-engin-25-001-lec-001"><b>ENGIN 25</b> Visualization for Design</a></p>
+                      <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2019-fall-math-54-003-lec-003"><b>MATH 54</b> Linear Algebra and Diffrential Equations</a></p>
+                      <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2019-fall-chem-1a-002-lec-002"><b>CHEM 1A</b> General Chemistry</a></p>
+                      <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2019-fall-chem-1al-001-lec-001"><b>CHEM 1AL</b> General Chemistry Laboratory</a></p>
+                      <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2019-fall-german-1-006-lec-006"><b>German 1</b> Introductory German 1</a></p>
+                  </div>
 
-            <button class="accordion">Spring 2020</button>
-              <div class="panel">
-                  <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2020-spring-engin-7-001-lec-001">ENGIN 7 - Introduction to Computer Programming for Scientists and Engineers</a></p>
-                  <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2020-spring-math-53-001-lec-001">MATH 53 - Multivariable Calculus</a></p>
-                  <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2020-spring-physics-7b-001-lec-001">PHYSICS 7B - Physics for Scientists and Engineers</a></p>
-                  <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2020-spring-german-2-002-lec-002">German 2 - Introductory German 2</a></p>
-              </div>
+                <button class="accordion">Spring 2020</button>
+                  <div class="panel">
+                      <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2020-spring-engin-7-001-lec-001"><b>ENGIN 7</b> Introduction to Programming for Scientists and Engineers</a></p>
+                      <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2020-spring-math-53-001-lec-001"><b>MATH 53</b> Multivariable Calculus</a></p>
+                      <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2020-spring-physics-7b-001-lec-001"><b>PHYSICS 7B</b> Physics for Scientists and Engineers</a></p>
+                      <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2020-spring-german-2-002-lec-002"><b>German 2</b> Introductory German 2</a></p>
+                  </div>
+            </div>
           </div>
         </div>
       </div>
@@ -85,15 +126,25 @@
           <a class = "anchor" name="Freelance-CAD">a</a>
           <a class = "heading" href = "#Freelance-CAD">Freelance CAD</a>
           <p>
-            I am currently accepting proposals to do small independent CAD projects. Here is some of my past work.
-            <img class = "inline-object" src = "{{url_for('static', filename='images/go-pro-mount.JPG')}}">
+            I am currently accepting proposals to do small CAD projects. Here is some of my past work.
+          </p>
+          <div class="inline-object-small carousel-container">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class = "slide-container">
+              <img class="slide" src = "{{url_for('static', filename='images/go-pro-mount.JPG')}}">
+              <img class="slide" src = "{{url_for('static', filename='images/phone-case.JPG')}}">
+            </div>
+          </div>
+          <p>
             A Gopro mount for football helmets I designed for a client. The entire mount is made from just two simple sheet metal parts, and weighs less than 0.15 lbs.
+            A plastic iPhone case desinged for a client.
           </p>
 
           <a class = "anchor" name="TAFLab-Research">a</a>
           <a class = "heading" href = "#TAFLab-Research">TAFLab-Research</a>
           <p>
-            hello
+            I am currently an undergraduate research assistant in the <a class = "inline-link" target="_blank" href = "https://taflab.berkeley.edu/">Berkeley Theoretical and Applied Fluid Dynamics Laboratory<a>. I am a member of a team working on the US Department of Energy <a class = "inline-link" target="_blank" href = "https://americanmadechallenges.org/wavestowater/">Waves to Water Prize</a>. This past semester, I created <a class = "inline-link" target="_blank" href = "https://github.com/AedenGB/WavesToWaterSimulator">simulator in Matlab</a> that demonstrated issues with ability of rotary pump to capture energy from wave energy source while remaining lubricated. Also wrote software to determine optimal reisistive torque from power take off system. 9 hrs/week
           </p>
 
           <a class = "anchor" name="CSU-Fullerton-Research">a</a>
@@ -142,6 +193,7 @@
             <a href = "mailto:aedengb@berkeley.edu"><button class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/mail-icon.png')}}">AEDENGB@BERKELEY.EDU</button></a>
             <a target="_blank" href = "{{url_for('static', filename='documents/resume.pdf')}}"><button class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/document-icon.png')}}">RESUME</button></a>
             <a target="_blank" href = "https://www.linkedin.com/in/aedengasserbrennan/"><button class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/linkedin-icon.png')}}">LINKEDIN</button></a>
+            <a target="_blank" href = "https://github.com/AedenGB"><button class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/github-icon.png')}}">GITHUB</button></a>
           </div>
       </div>
 

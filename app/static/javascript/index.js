@@ -56,7 +56,7 @@ $(document).ready(function(){
   function position_underline(position){
     var top_of_screen = $(window).scrollTop();
     $("#menu-underline").css('top', $(".menu-link[href='"+position+"']").offset().top-top_of_screen+$(".menu-link[href='"+position+"']").outerHeight());
-    $("#menu-underline").css('margin-left', $(".menu-link[href='"+position+"']").offset().left);
+    $("#menu-underline").css('margin-left', $(".menu-link[href='"+position+"']").offset().left-3);
     $("#menu-underline").css('width', $(".menu-link[href='"+position+"']").css('width'));
   }
   function menu_background() {
@@ -78,4 +78,6 @@ $(document).ready(function(){
   all_actions();
 
   $(window).on('mousemove scroll resize', all_actions);
+
+  
 });
