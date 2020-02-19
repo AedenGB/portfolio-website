@@ -145,7 +145,7 @@ body, button{
   width: 100%;
 }
 .inline-object-small{
-  max-width: calc(var(--body-width)/2);
+  max-width: calc(var(--body-width)/1.7);
   width: 100%;
   margin:0 auto;
 }
@@ -309,7 +309,9 @@ button{
   display: inline-block;
 }
 .slide-image{
-  width: 100%;
+  width: 80%;
+  padding: 0;
+  margin-left: 10%;
   position: static;
   height: 100%;
 }
@@ -322,7 +324,7 @@ figcaption{
   position: absolute;
   top: 50%;
   font-size: 30px;
-  padding: 5px 2px;
+  padding: 5px 4px;
   transition: .3s;
   -webkit-user-select: none;
   -moz-user-select: none;

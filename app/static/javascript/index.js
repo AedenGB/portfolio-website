@@ -83,14 +83,14 @@ $(document).ready(function(){
       var slide_index = $(element).nextAll("div").attr("index");
       console.log(slide_index);
       if (positive){
-        $(".left").removeClass("disabled");
+        $(element).siblings(".left").removeClass("disabled");
         slide_index = parseInt(slide_index)+1;
         if(slide_index>=max){
           $(element).addClass("disabled");
         }
       }
       else {
-        $(".right").removeClass("disabled");
+        $(element).siblings(".right").removeClass("disabled");
         slide_index = parseInt(slide_index)-1;
         if(slide_index<=0){
           $(element).addClass("disabled");
