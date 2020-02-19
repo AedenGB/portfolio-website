@@ -46,7 +46,7 @@
           <a class = "section-heading" href = "#Education">Education</a>
 
           <p>
-            <img class = "inline-image" src = "{{url_for('static', filename='images/berkeley-engineering-logo.JPG')}}">
+            <a class = "inline-image" target="_blank" href = "https://engineering.berkeley.edu/"><img class = "inline-image" src = "{{url_for('static', filename='images/berkeley-engineering-logo.JPG')}}"></a>
             I am currently a Freshman in the <a class = "inline-link" target="_blank" href = "https://engineering.berkeley.edu/">UC Berkeley College of Engineering<a> pursuing a B.S.E. in Mechanical Engineering, with an intended double major in Applied Mathematics, in the <a class = "inline-link" target="_blank" href = "https://ls.berkeley.edu/">UC Berkeley College of Letters & Sciences</a>.
           </p>
           <p>
@@ -129,21 +129,26 @@
             I am currently accepting proposals to do small CAD projects. Here is some of my past work.
           </p>
           <div class="inline-object-small carousel-container">
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            <div class = "slide-container">
-              <img class="slide" src = "{{url_for('static', filename='images/go-pro-mount.JPG')}}">
-              <img class="slide" src = "{{url_for('static', filename='images/phone-case.JPG')}}">
+            <a class="left disabled">&#10094;</a>
+            <a class="right">&#10095;</a>
+            <div index = "0" class = "slide-container" max_index = "2">
+              <div class = "slide">
+                <img class = "slide-image" src = "{{url_for('static', filename='images/go-pro-mount.JPG')}}">
+                <figcaption>A Gopro mount for football helmets I designed for a client. The entire mount is made from just two simple sheet metal parts, and weighs less than 0.15 lbs.</figcaption>
+
+              </div>
+              <div class = "slide">
+                <img class="slide-image" src = "{{url_for('static', filename='images/phone-case.JPG')}}">
+                <figcaption>A plastic iPhone case desinged for a client.<br><br><br></figcaption>
+              </div>
             </div>
           </div>
-          <p>
-            A Gopro mount for football helmets I designed for a client. The entire mount is made from just two simple sheet metal parts, and weighs less than 0.15 lbs.
-            A plastic iPhone case desinged for a client.
-          </p>
+
 
           <a class = "anchor" name="TAFLab-Research">a</a>
           <a class = "heading" href = "#TAFLab-Research">TAFLab-Research</a>
           <p>
+            <a class = "inline-image" target="_blank" href = "https://taflab.berkeley.edu/"><img class = "inline-image" src = "{{url_for('static', filename='images/taflab-logo.jpg')}}"></a>
             I am currently an undergraduate research assistant in the <a class = "inline-link" target="_blank" href = "https://taflab.berkeley.edu/">Berkeley Theoretical and Applied Fluid Dynamics Laboratory<a>. I am a member of a team working on the US Department of Energy <a class = "inline-link" target="_blank" href = "https://americanmadechallenges.org/wavestowater/">Waves to Water Prize</a>. This past semester, I created <a class = "inline-link" target="_blank" href = "https://github.com/AedenGB/WavesToWaterSimulator">simulator in Matlab</a> that demonstrated issues with ability of rotary pump to capture energy from wave energy source while remaining lubricated. Also wrote software to determine optimal reisistive torque from power take off system. 9 hrs/week
           </p>
 

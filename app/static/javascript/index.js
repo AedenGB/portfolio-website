@@ -24,8 +24,6 @@ $(document).ready(function(){
     var contact = $("#Contact-Section").offset().top;
     var window_height = $(window).height();
 
-    console.log(contact-window_height);
-    console.log(top_of_screen);
     if($(".menu-link[href='#Homepage']:hover").length != 0){
       underline_position = "#Homepage";
     } else if($(".menu-link[href='#Education']:hover").length != 0){
@@ -79,5 +77,34 @@ $(document).ready(function(){
 
   $(window).on('mousemove scroll resize', all_actions);
 
-  
+  function increment_slides(element, positive) {
+    var max = parseInt($(element).nextAll("div").attr("max_index"))-1;
+    if(! $(element).hasClass("disabled")){
+      var slide_index = $(element).nextAll("div").attr("index");
+      console.log(slide_index);
+      if (positive){
+        $(".left").removeClass("disabled");
+        slide_index = parseInt(slide_index)+1;
+        if(slide_index>=max){
+          $(element).addClass("disabled");
+        }
+      }
+      else {
+        $(".right").removeClass("disabled");
+        slide_index = parseInt(slide_index)-1;
+        if(slide_index<=0){
+          $(element).addClass("disabled");
+        }
+      }
+      $(element).nextAll("div").attr("index", slide_index);
+      $(element).nextAll("div").css("margin-left", slide_index*(-100)+"%");
+    }
+  }
+
+  $(".left").on("click", function(){
+    increment_slides(this, false);
+  });
+  $(".right").on("click", function(){
+    increment_slides(this, true);
+  });
 });
