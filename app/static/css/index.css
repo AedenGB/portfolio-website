@@ -321,9 +321,8 @@ figcaption{
   cursor: pointer;
   position: absolute;
   top: 50%;
-  height: 30px;
-  padding: 5px;
-  padding-top: 7px;
+  font-size: 30px;
+  padding: 5px 2px;
   transition: .3s;
   -webkit-user-select: none;
   -moz-user-select: none;

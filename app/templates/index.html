@@ -135,7 +135,6 @@
               <div class = "slide">
                 <img class = "slide-image" src = "{{url_for('static', filename='images/go-pro-mount.JPG')}}">
                 <figcaption>A Gopro mount for football helmets I designed for a client. The entire mount is made from just two simple sheet metal parts, and weighs less than 0.15 lbs.</figcaption>
-
               </div>
               <div class = "slide">
                 <img class="slide-image" src = "{{url_for('static', filename='images/phone-case.JPG')}}">
@@ -149,8 +148,31 @@
           <a class = "heading" href = "#TAFLab-Research">TAFLab-Research</a>
           <p>
             <a class = "inline-image" target="_blank" href = "https://taflab.berkeley.edu/"><img class = "inline-image" src = "{{url_for('static', filename='images/taflab-logo.jpg')}}"></a>
-            I am currently an undergraduate research assistant in the <a class = "inline-link" target="_blank" href = "https://taflab.berkeley.edu/">Berkeley Theoretical and Applied Fluid Dynamics Laboratory<a>. I am a member of a team working on the US Department of Energy <a class = "inline-link" target="_blank" href = "https://americanmadechallenges.org/wavestowater/">Waves to Water Prize</a>. This past semester, I created <a class = "inline-link" target="_blank" href = "https://github.com/AedenGB/WavesToWaterSimulator">simulator in Matlab</a> that demonstrated issues with ability of rotary pump to capture energy from wave energy source while remaining lubricated. Also wrote software to determine optimal reisistive torque from power take off system. 9 hrs/week
+            I am currently an undergraduate research assistant in the <a class = "inline-link" target="_blank" href = "https://taflab.berkeley.edu/">Berkeley Theoretical and Applied Fluid Dynamics Laboratory<a>. I am a member of a team working on the US Department of Energy <a class = "inline-link" target="_blank" href = "https://americanmadechallenges.org/wavestowater/">Waves to Water Prize</a>. This past semester, I created <a class = "inline-link" target="_blank" href = "https://github.com/AedenGB/WavesToWaterSimulator">simulator in Matlab</a> that demonstrated issues with ability of rotary pump to capture energy from wave energy source while remaining lubricated. I also wrote software to determine the optimal flywheel weight, and spool diameter to maximize the energy capture of our pumping system at various wave frequencies and amplitudes.
           </p>
+          <div class="inline-object-small carousel-container">
+            <a class="left disabled">&#10094;</a>
+            <a class="right">&#10095;</a>
+            <div index = "0" class = "slide-container" max_index = "4">
+              <div class = "slide">
+                <img class = "slide-image" src = "{{url_for('static', filename='images/diagram-taflab.png')}}">
+                <figcaption>A diagram of our current system design.</figcaption>
+              </div>
+              <div class = "slide">
+                <img class="slide-image" src = "{{url_for('static', filename='images/time-domain-taflab.png')}}">
+                <figcaption>Simulated pump angular velocity vs. time.</figcaption>
+              </div>
+              <div class = "slide">
+                <img class="slide-image" src = "{{url_for('static', filename='images/optimal-spool-taflab.png')}}">
+                <figcaption>Optimal spool radii for various conditions.</figcaption>
+              </div>
+              <div class = "slide">
+                <img class="slide-image" src = "{{url_for('static', filename='images/optimal-flywheel-taflab.png')}}">
+                <figcaption>Optimal flywheel moments for various conditions.</figcaption>
+              </div>
+
+            </div>
+          </div>
 
           <a class = "anchor" name="CSU-Fullerton-Research">a</a>
           <a class = "heading" href = "#CSU-Fullerton-Research">CSU Fullerton Research</a>
