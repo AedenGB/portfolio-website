@@ -34,9 +34,9 @@
           <img id = "profile-photo" class = "shadow" src = "{{url_for('static', filename='images/profile-photo.JPG')}}">
           <span id = "name">Aeden Gasser-Brennan</span>
           <span class = "button-container">
-            <a target="_blank" href = "{{url_for('static', filename='documents/resume.pdf')}}"><button class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/document-icon.png')}}">RESUME</button></a>
-            <a href = "mailto:aedengb@gmail.com"><button class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/mail-icon.png')}}">EMAIL</button></a>
-            <a target="_blank" href = "https://www.linkedin.com/in/aedengasserbrennan/"><button class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/linkedin-icon.png')}}">LINKEDIN</button></a>
+            <a target="_blank" href = "{{url_for('static', filename='documents/resume.pdf')}}"><div class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/document-icon.png')}}">RESUME</div></a>
+            <a href = "mailto:aedengb@gmail.com"><div class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/mail-icon.png')}}">EMAIL</div></a>
+            <a target="_blank" href = "https://www.linkedin.com/in/aedengasserbrennan/"><div class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/linkedin-icon.png')}}">LINKEDIN</div></a>
           </span>
       </div>
 
@@ -97,8 +97,8 @@
           <div class = "column">
             <a class = "section-heading" href = "#Skills">Relevant Coursework</a>
             <div class = "inline-object">
-                <div class="accordion">Fall 2019</div>
-                  <div class="panel">
+                <div class="accordion expanded">Fall 2019</div>
+                  <div class="panel expanded">
                       <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2019-fall-engin-25-001-lec-001"><b>ENGIN 25</b> Visualization for Design</a></p>
                       <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2019-fall-math-54-003-lec-003"><b>MATH 54</b> Linear Algebra and Diffrential Equations</a></p>
                       <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2019-fall-chem-1a-002-lec-002"><b>CHEM 1A</b> General Chemistry</a></p>
@@ -151,8 +151,8 @@
             I am currently an undergraduate research assistant in the <a class = "inline-link" target="_blank" href = "https://taflab.berkeley.edu/">Berkeley Theoretical and Applied Fluid Dynamics Laboratory<a>. I am a member of a team working on the US Department of Energy <a class = "inline-link" target="_blank" href = "https://americanmadechallenges.org/wavestowater/">Waves to Water Prize</a>. This past semester, I created <a class = "inline-link" target="_blank" href = "https://github.com/AedenGB/WavesToWaterSimulator">simulator in Matlab</a> that demonstrated issues with ability of rotary pump to capture energy from wave energy source while remaining lubricated. I also wrote software to determine the optimal flywheel weight, and spool diameter to maximize the energy capture of our pumping system at various wave frequencies and amplitudes.
           </p>
           <p style = "text-align:center">
-            <a target="_blank" href = "{{url_for('static', filename='documents/pump-simulation-report.pdf')}}"><button class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/document-icon.png')}}">REPORT ON FINDINGS</button></a>
-            <a target="_blank" href = "https://github.com/AedenGB/WavesToWaterSimulator"><button class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/github-icon.png')}}">SIMULATOR REPO</button></a>
+            <a target="_blank" href = "{{url_for('static', filename='documents/pump-simulation-report.pdf')}}"><div class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/document-icon.png')}}">REPORT ON FINDINGS</div></a>
+            <a target="_blank" href = "https://github.com/AedenGB/WavesToWaterSimulator"><div class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/github-icon.png')}}">SIMULATOR REPO</div></a>
           </p>
           <div class="inline-object-small carousel-container">
             <a class="left disabled">&#10094;</a>
@@ -229,11 +229,11 @@
       <div id = "Contact-Section" class = "body-section">
           <a class = "anchor" name="Contact">a</a>
           <div class = "contact-button-container">
-            <a href = "mailto:aeden.gb@gmail.com"><button class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/mail-icon.png')}}">AEDEN.GB@GMAIL.COM</button></a>
-            <a href = "mailto:aedengb@berkeley.edu"><button class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/mail-icon.png')}}">AEDENGB@BERKELEY.EDU</button></a>
-            <a target="_blank" href = "{{url_for('static', filename='documents/resume.pdf')}}"><button class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/document-icon.png')}}">RESUME</button></a>
-            <a target="_blank" href = "https://www.linkedin.com/in/aedengasserbrennan/"><button class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/linkedin-icon.png')}}">LINKEDIN</button></a>
-            <a target="_blank" href = "https://github.com/AedenGB"><button class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/github-icon.png')}}">GITHUB</button></a>
+            <a href = "mailto:aeden.gb@gmail.com"><div class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/mail-icon.png')}}">AEDEN.GB@GMAIL.COM</div></a>
+            <a href = "mailto:aedengb@berkeley.edu"><div class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/mail-icon.png')}}">AEDENGB@BERKELEY.EDU</div></a>
+            <a target="_blank" href = "{{url_for('static', filename='documents/resume.pdf')}}"><div class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/document-icon.png')}}">RESUME</div></a>
+            <a target="_blank" href = "https://www.linkedin.com/in/aedengasserbrennan/"><div class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/linkedin-icon.png')}}">LINKEDIN</div></a>
+            <a target="_blank" href = "https://github.com/AedenGB"><div class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/github-icon.png')}}">GITHUB</div></a>
           </div>
       </div>
 

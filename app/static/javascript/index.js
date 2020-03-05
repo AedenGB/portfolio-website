@@ -69,9 +69,12 @@ $(document).ready(function(){
   }
   function open_accordion(accordion){
     var current_panel = $(accordion).next(".panel");
+    var panel_height = current_panel.scrollHeight;
     $(".accordion, .panel").not(current_panel).not(accordion).removeClass("expanded");
     $(accordion).toggleClass("expanded");
     $(current_panel).toggleClass("expanded");
+    $(current_panel).css("height", panel_height);
+    console.log(panel_height);
   }
 
   function all_actions() {
