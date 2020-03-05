@@ -69,8 +69,11 @@ $(document).ready(function(){
   }
   function open_accordion(accordion){
     var current_panel = $(accordion).next(".panel");
+
     $(".accordion, .panel").not(current_panel).not(accordion).removeClass("expanded");
-    $(".panel").css("max-height", 0);
+
+    $(".panel").css("max-height", '0px');
+
     $(accordion).toggleClass("expanded");
     $(current_panel).toggleClass("expanded");
     if ($(current_panel).css("max-height") == '0px'){
