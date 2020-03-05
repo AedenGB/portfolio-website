@@ -8,6 +8,8 @@ $(document).ready(function(){
      duration: 900
   });
 
+  $(".panel").not(".expanded").css("max-height", "0px");
+
   function adjust_for_window_size() {
     var menu_height = $("#menu-bar").height();//based on height of elements in menu bar, adjust scroll characteristics
     $(".anchor").css("top",-menu_height-10);

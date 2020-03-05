@@ -41,7 +41,6 @@ html{
   left:0;
   width: 100%;
   padding: 6px;
-  opacity: 0.9;
 }
 .menu-link{
   display: inline;
@@ -370,7 +369,6 @@ figcaption{
   transform: rotate(135deg);
 }
 .panel {
-  max-height: 0;
   padding: 0 18px;
   margin: 0;
   background-color: var(--light-background-color);
@@ -378,10 +376,10 @@ figcaption{
   border:none;
   width: 100%;
   transition: max-height .6s;
+  border-left: 1px solid var(--medium-element-color);
+  border-right: 1px solid var(--medium-element-color);
 }
 .panel.expanded{
   max-height: 300px;
-  border: 1px solid var(--medium-element-color);
-  border-top: 0px;
-
+  border-bottom: 1px solid var(--medium-element-color);
 }
