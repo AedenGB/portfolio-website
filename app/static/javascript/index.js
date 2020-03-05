@@ -81,7 +81,6 @@ $(document).ready(function(){
     var max = parseInt($(element).nextAll("div").attr("max_index"))-1;
     if(! $(element).hasClass("disabled")){
       var slide_index = $(element).nextAll("div").attr("index");
-      console.log(slide_index);
       if (positive){
         $(element).siblings(".left").removeClass("disabled");
         slide_index = parseInt(slide_index)+1;
