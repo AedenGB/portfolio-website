@@ -67,6 +67,13 @@ $(document).ready(function(){
       $('#menu-bar').css('background',"rgba(256,256,256,.9)");
     }
   }
+  function open_accordion(accordion){
+    var current_panel = $(accordion).next(".panel");
+    $(".accordion, .panel").not(current_panel).not(accordion).removeClass("expanded");
+    $(accordion).toggleClass("expanded");
+    $(current_panel).toggleClass("expanded");
+  }
+
   function all_actions() {
     menu_background();
     menu_scroll_underline();
@@ -105,5 +112,9 @@ $(document).ready(function(){
   });
   $(".right").on("click", function(){
     increment_slides(this, true);
+  });
+
+  $(".accordion").on("click", function(){
+    open_accordion(this);
   });
 });

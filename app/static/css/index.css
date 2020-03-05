@@ -367,7 +367,7 @@ figcaption{
   float: right;
   transition: transform 0.25s;
 }
-.accordion:focus::after{
+.expanded:after{
   transform: rotate(135deg);
 }
 .panel {
@@ -379,7 +379,7 @@ figcaption{
   overflow: hidden;
   border:none;
 }
-.accordion + .panel:active,.accordion:focus + .panel,.panel:active{
+.expanded{
   max-height: 550px;
   border: 1px solid var(--medium-element-color);
   border-top: 0px;
