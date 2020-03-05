@@ -69,12 +69,13 @@ $(document).ready(function(){
   }
   function open_accordion(accordion){
     var current_panel = $(accordion).next(".panel");
-    var panel_height = current_panel.scrollHeight;
     $(".accordion, .panel").not(current_panel).not(accordion).removeClass("expanded");
+    $(".panel").css("max-height", 0);
     $(accordion).toggleClass("expanded");
     $(current_panel).toggleClass("expanded");
-    $(current_panel).css("height", panel_height);
-    console.log(panel_height);
+    if ($(current_panel).css("max-height") == '0px'){
+      $(current_panel).css("max-height", $(current_panel)[0].scrollHeight);
+    }
   }
 
   function all_actions() {
