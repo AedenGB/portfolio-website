@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Aeden Gasser-Brennan</title>
-    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="{{url_for('static', filename='javascript/jquery-1.9.1.min.js')}}"></script>
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700&display=swap" rel="stylesheet">
@@ -150,6 +150,10 @@
             <a class = "inline-image" target="_blank" href = "https://taflab.berkeley.edu/"><img class = "inline-image" src = "{{url_for('static', filename='images/taflab-logo.jpg')}}"></a>
             I am currently an undergraduate research assistant in the <a class = "inline-link" target="_blank" href = "https://taflab.berkeley.edu/">Berkeley Theoretical and Applied Fluid Dynamics Laboratory<a>. I am a member of a team working on the US Department of Energy <a class = "inline-link" target="_blank" href = "https://americanmadechallenges.org/wavestowater/">Waves to Water Prize</a>. This past semester, I created <a class = "inline-link" target="_blank" href = "https://github.com/AedenGB/WavesToWaterSimulator">simulator in Matlab</a> that demonstrated issues with ability of rotary pump to capture energy from wave energy source while remaining lubricated. I also wrote software to determine the optimal flywheel weight, and spool diameter to maximize the energy capture of our pumping system at various wave frequencies and amplitudes.
           </p>
+          <p style = "text-align:center">
+            <a target="_blank" href = "{{url_for('static', filename='documents/pump-simulation-report.pdf')}}"><button class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/document-icon.png')}}">REPORT ON FINDINGS</button></a>
+            <a target="_blank" href = "https://github.com/AedenGB/WavesToWaterSimulator"><button class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/github-icon.png')}}">SIMULATOR REPO</button></a>
+          </p>
           <div class="inline-object-small carousel-container">
             <a class="left disabled">&#10094;</a>
             <a class="right">&#10095;</a>
@@ -190,13 +194,22 @@
           <a class = "anchor" name="Formula-Racing">a</a>
           <a class = "heading" href = "#Formula-Racing">Formula Racing</a>
             <p>
-              hello
+              I am a member of the Vehicle Dynamics subteam of the Berkeley <a class = "inline-link" target="_blank" href = "https://fsae.berkeley.edu/">Formula SAE Team.</a> In my year on the team, I have redesigned our compliance testing procedures, 
             </p>
+            <div class="inline-object-small">
+                  <img class = "inline-object-small" src = "{{url_for('static', filename='images/tire-temp-mounts.png')}}">
+                  <figcaption>Welded-steel tire temperature sensor mounts that I designed and fabricated for the 2020 car.</figcaption>
+            </div>
 
           <a class = "anchor" name="Battlebots">a</a>
           <a class = "heading" href = "#Battlebots">Battlebots</a>
             <p>
-              hello
+              <img class = "inline-image" src = "{{url_for('static', filename='images/shellshock.png')}}">
+              I was a member of Battlebots team ShellShock. We competed in Battlebots 2020. Our robot used electromagnets and retractable wheels to fix itself to the steel floor with over a 1000lbs of force to avoid getting flipped.
+              I helped with the CAD design of the chassis and the retractable wheels, which were springloaded so that under normal load they lifted us just above the ground, while with the electromagnets on they fully retracted into the chassis.
+              <div class = "inline-object-small"><img class = "inline-object-small" src = "{{url_for('static', filename='images/battlebot-cad.png')}}">
+              <figcaption>CAD of the robot with the steel shell removed.</figcaption>
+              </div>
             </p>
 
           <a class = "anchor" name="VEX-Robotics">a</a>
@@ -215,7 +228,7 @@
 
       <div id = "Contact-Section" class = "body-section">
           <a class = "anchor" name="Contact">a</a>
-          <div id = "contact-button-container">
+          <div class = "contact-button-container">
             <a href = "mailto:aeden.gb@gmail.com"><button class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/mail-icon.png')}}">AEDEN.GB@GMAIL.COM</button></a>
             <a href = "mailto:aedengb@berkeley.edu"><button class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/mail-icon.png')}}">AEDENGB@BERKELEY.EDU</button></a>
             <a target="_blank" href = "{{url_for('static', filename='documents/resume.pdf')}}"><button class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/document-icon.png')}}">RESUME</button></a>
