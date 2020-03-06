@@ -352,9 +352,16 @@ figcaption{
   padding: 18px;
   text-align: left;
   width: 100%;
-  border: 1px solid var(--medium-element-color);
+  border-top: 1px solid var(--medium-element-color);
+  border-left: 1px solid var(--medium-element-color);
+  border-right: 1px solid var(--medium-element-color);
+  transition: background .2s ease-in-out;
+}
+.accordion.last {
+  border-bottom: 1px solid var(--medium-element-color);
+}
+.accordion.expanded.last{
   border-bottom: 0px;
-  transition: .2s ease-in-out;
 }
 .accordion:hover {
   background-color: var(--medium-element-color);
@@ -363,11 +370,12 @@ figcaption{
   content: '+';
   font-size: 30px;
   float: right;
-  transition: transform 0.6s;
+  transition: transform 0.6s ease-in-out;
 }
 .accordion.expanded:after{
   transform: rotate(135deg);
 }
+
 .panel {
   padding: 0 18px;
   margin: 0;
@@ -375,11 +383,13 @@ figcaption{
   overflow: hidden;
   border:none;
   width: 100%;
-  transition: max-height .6s;
+  transition: max-height .6s ease-in-out;
   border-left: 1px solid var(--medium-element-color);
   border-right: 1px solid var(--medium-element-color);
 }
 .panel.expanded{
   max-height: 300px;
+}
+.panel.expanded.last{
   border-bottom: 1px solid var(--medium-element-color);
 }
