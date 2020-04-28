@@ -60,7 +60,7 @@
             I am currently a Freshman in the <a class = "inline-link" target="_blank" href = "https://engineering.berkeley.edu/">UC Berkeley College of Engineering<a> pursuing a B.S.E. in Mechanical Engineering, with an intended double major in Applied Mathematics, in the <a class = "inline-link" target="_blank" href = "https://ls.berkeley.edu/">UC Berkeley College of Letters & Sciences</a>.
           </p>
           <p>
-            I have been awarded the <a class = "inline-link" target="_blank" href = "https://financialaid.berkeley.edu/regents-and-chancellors-scholarship">UC Berkeley Regents Scholarship<a>, given to the top 2% of every UC Berkeley class. On campus, I am a member of the <a class = "inline-link" target="_blank" href = "https://asme.berkeley.edu/">Berkeley Chapter</a> of the American Society of Mechanical Engineers, as well as the school <a class = "inline-link" target="_blank" href = "https://fsae.berkeley.edu/">Formula SAE Team</a>. I am also a research assistant in the <a class = "inline-link" target="_blank" href = "https://taflab.berkeley.edu/">Berkeley Theoretical and Applied Fluid Dynamics Laboratory<a>.
+            I have been awarded the <a class = "inline-link" target="_blank" href = "https://financialaid.berkeley.edu/regents-and-chancellors-scholarship">UC Berkeley Regents Scholarship<a>, given to the top 2% of every UC Berkeley class. On campus, I lead the Vehicle Dynamics subteam of the <a class = "inline-link" target="_blank" href = "https://fsae.berkeley.edu/">Formula SAE Team</a>. I am also a research assistant in the <a class = "inline-link" target="_blank" href = "https://taflab.berkeley.edu/">Berkeley Theoretical and Applied Fluid Dynamics Laboratory<a>.
 
           </p>
           <p>
@@ -79,7 +79,7 @@
             <a class = "heading" href = "#CAD-Software">CAD Software</a>
             <p class = "condensed">
               Autodesk Inventor<br>
-              Solidworks<br>
+              Solidworks - <a class = "inline-link" target="_blank" href = "{{url_for('static', filename='documents/CSWA-certification.pdf')}}">CSWA Certified</a><br>
               Grabcad<br>
               Autodesk Vault<br>
             </p>
@@ -107,8 +107,8 @@
           <div class = "column">
             <a class = "section-heading" href = "#Skills">Relevant Coursework</a>
             <div class = "inline-object">
-                <div class="accordion expanded">Fall 2019</div>
-                  <div id = "hi" class="panel expanded">
+                <div class="accordion">Fall 2019</div>
+                  <div class="panel">
                       <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2019-fall-engin-25-001-lec-001"><b>ENGIN 25</b> Visualization for Design</a></p>
                       <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2019-fall-math-54-003-lec-003"><b>MATH 54</b> Linear Algebra and Diffrential Equations</a></p>
                       <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2019-fall-chem-1a-002-lec-002"><b>CHEM 1A</b> General Chemistry</a></p>
@@ -116,8 +116,8 @@
                       <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2019-fall-german-1-006-lec-006"><b>German 1</b> Introductory German 1</a></p>
                   </div>
 
-                <div class="accordion last">Spring 2020</div>
-                  <div class="panel last">
+                <div class="accordion last expanded">Spring 2020</div>
+                  <div class="panel last expanded">
                       <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2020-spring-engin-7-001-lec-001"><b>ENGIN 7</b> Introduction to Programming for Scientists and Engineers</a></p>
                       <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2020-spring-math-53-001-lec-001"><b>MATH 53</b> Multivariable Calculus</a></p>
                       <p><a class = "external-link" target="_blank" href = "https://classes.berkeley.edu/content/2020-spring-physics-7b-001-lec-001"><b>PHYSICS 7B</b> Physics for Scientists and Engineers</a></p>
@@ -141,18 +141,22 @@
           <div class="inline-object-small carousel-container">
             <a class="left disabled">&#10094;</a>
             <a class="right">&#10095;</a>
-            <div index = "0" class = "slide-container" max_index = "3">
+            <div index = "0" class = "slide-container" max_index = "4">
+              <div class = "slide">
+                <img class = "slide-image" src = "{{url_for('static', filename='images/facemask-render.JPG')}}">
+                <figcaption>A medical facemask I designed for a client. The majority of the mask is made of clear plastic so that facial expressions are still visible to others.</figcaption>
+              </div>
               <div class = "slide">
                 <img class = "slide-image" src = "{{url_for('static', filename='images/go-pro-mount.JPG')}}">
                 <figcaption>A Gopro mount for football helmets I designed for a client. The entire mount is made from just two simple sheet metal parts, and weighs less than 0.15 lbs.</figcaption>
               </div>
               <div class = "slide">
-                <img class="slide-image" src = "{{url_for('static', filename='images/phone-case.JPG')}}">
-                <figcaption>A plastic iPhone case desinged for a client.<br><br><br></figcaption>
-              </div>
-              <div class = "slide">
                 <img class="slide-image" src = "{{url_for('static', filename='images/jewlery-box-render.png')}}">
                 <figcaption>A Jewlery Box with a locking iris mechanism below the main tray. <br><br><br></figcaption>
+              </div>
+              <div class = "slide">
+                <img class="slide-image" src = "{{url_for('static', filename='images/phone-case.JPG')}}">
+                <figcaption>A plastic iPhone case desinged for a client.<br><br><br></figcaption>
               </div>
             </div>
           </div>
@@ -162,8 +166,15 @@
           <a class = "heading" href = "#TAFLab-Research">TAFLab-Research</a>
           <p>
             <a class = "inline-image" target="_blank" href = "https://taflab.berkeley.edu/"><img class = "inline-image" src = "{{url_for('static', filename='images/taflab-logo.jpg')}}"></a>
-            I am currently an undergraduate research assistant in the <a class = "inline-link" target="_blank" href = "https://taflab.berkeley.edu/">Berkeley Theoretical and Applied Fluid Dynamics Laboratory<a>. I am a member of a team working on the US Department of Energy <a class = "inline-link" target="_blank" href = "https://americanmadechallenges.org/wavestowater/">Waves to Water Prize</a>. This past semester, I created <a class = "inline-link" target="_blank" href = "https://github.com/AedenGB/WavesToWaterSimulator">simulator in Matlab</a> that computed time-domain results for a rotary pump connected to a floating wave energy absorber. I also wrote software to determine the optimal flywheel weight, and spool diameter to maximize the energy capture of our pumping system at various wave frequencies and amplitudes.
-          </p>
+            I am currently an undergraduate research assistant in the <a class = "inline-link" target="_blank" href = "https://taflab.berkeley.edu/">Berkeley Theoretical and Applied Fluid Dynamics Laboratory<a>.
+              I am a member of a team working on the US Department of Energy <a class = "inline-link" target="_blank" href = "https://americanmadechallenges.org/wavestowater/">Waves to Water Prize</a>.
+              My first contribution to the project was a
+              <a class = "inline-link" target="_blank" href = 'https://github.com/AedenGB/WavesToWaterSimulator/tree/master/time%20domain%20Fall%202020'>simulator in Matlab</a>
+              that computed time-domain results for a rotary pump connected to a floating wave energy absorber. Using this simulator, I made an optimizer to determine the optimal
+              flywheel weight, and spool diameter to maximize the energy capture of our pumping system at various wave frequencies and amplitudes.
+              Most recently, I have been working on
+              <a class = "inline-link" target="_blank" href = 'https://github.com/AedenGB/WavesToWaterSimulator/tree/master/rotary%20piston%20pump%20resistance%20simulator%20Spring%202020'>software</a> to choose the exact parameters for a custom high-pressure rotary water pump that we are constructing.
+              The sizes and positions of pistons on a crankshaft are optimized so that we can adapt the pump’s displacement easily to changing ocean conditions. </p>
           <div class = "inline-button-container">
             <a target="_blank" href = "{{url_for('static', filename='documents/pump-simulation-report.pdf')}}"><div class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/document-icon.png')}}">REPORT ON FINDINGS</div></a>
             <a target="_blank" href = "https://github.com/AedenGB/WavesToWaterSimulator"><div class = "floating-button"><img class = "icon" src = "{{url_for('static', filename='images/github-icon.png')}}">SIMULATOR REPO</div></a>
@@ -202,7 +213,7 @@
           <a class = "anchor" name="Formula-Racing">a</a>
           <a class = "heading" href = "#Formula-Racing">Formula Racing</a>
             <p>
-              I am a member of the Vehicle Dynamics subteam of the Berkeley <a class = "inline-link" target="_blank" href = "https://fsae.berkeley.edu/">Formula SAE Team.</a> In my year on the team, I have redesigned our compliance testing procedures, and been heavily involved in our suspension setup and tuning process.
+              I lead the Vehicle Dynamics subteam of the Berkeley <a class = "inline-link" target="_blank" href = "https://fsae.berkeley.edu/">Formula SAE Team.</a> I am responsible for managing the VD subsystem, which designs the car’s suspension geometry, runs all testing and simulation of the car, and produces overall vehicle design specs, such as tire compound/size, final drive ratio, CP location, and much more. In my time on the team, I have redesigned our compliance testing procedures, added temperature modeling to our in-house lap simulation software, and designed several new tools to analyze dynamic testing data.
             </p>
             <div class="inline-object-small">
                   <img class = "inline-object-small" src = "{{url_for('static', filename='images/tire-temp-mounts.png')}}">
