@@ -8,7 +8,7 @@ Trying to figure out whether this is bootstrap? It's written all from scratch :)
 
 
 <!DOCTYPE html>
-<html>
+<html prefix="og: http://ogp.me/ns#">
   <head>
    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162045997-1"></script>
@@ -21,6 +21,12 @@ Trying to figure out whether this is bootstrap? It's written all from scratch :)
     </script>
 
     <title>Aeden Gasser-Brennan</title>
+
+    <meta property="og:title" content="Aeden Gasser-Brennan"/>
+    <meta property="og:url" content="https://www.aedengasserbrennan.com"/>
+    <meta property="og:image" content="http://www.aedengb.com/static/images/profile-photo.JPG" />
+    <meta property="og:description" content="Hi I'm Aeden and this is my website!" />
+
     <script src="{{url_for('static', filename='javascript/jquery-1.9.1.min.js')}}"></script>
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
