@@ -1,9 +1,10 @@
 <!--
+Hello!!
+Welcome to my website. If you're reading this, take a moment to appreicate what you are doing right now.
+Somehow, human ingenuity has built this magical infrastructure that allows people to read and see what
+people put up on the web, from anywhere on the world, as fast as you can blink. It's literally magic.
 
-
-Trying to figure out whether this is bootstrap? It's written all from scratch :)
-
-
+I hope you're having an amazing day, magician :)
 -->
 
 
@@ -72,6 +73,9 @@ Trying to figure out whether this is bootstrap? It's written all from scratch :)
 
           <p>
             <a class = "inline-image" target="_blank" href = "https://engineering.berkeley.edu/"><img class = "inline-image" src = "{{url_for('static', filename='images/berkeley-engineering-logo.jpg')}}"></a>
+            I am a kid who grew up building with Legos and dreaming of building bigger and better things. The world is fascinating to me, and I put a huge value on understanding it, as well as I can, from the bottom to the top.
+          </p>
+          <p>
             I am currently a freshman in the <a class = "inline-link" target="_blank" href = "https://engineering.berkeley.edu/">UC Berkeley College of Engineering<a> pursuing a B.S.E. in Mechanical Engineering, with an intended double major in Applied Mathematics, in the <a class = "inline-link" target="_blank" href = "https://ls.berkeley.edu/">UC Berkeley College of Letters & Sciences</a>.
           </p>
           <p>
@@ -258,27 +262,31 @@ Trying to figure out whether this is bootstrap? It's written all from scratch :)
           <a class = "anchor" name="Projects">a</a>
           <a class = "section-heading" href = "#Projects">Projects</a>
 
-          <a class = "anchor" name="Plastic-Harmonic-Drive">a</a>
-          <a class = "heading" href = "#Plastic-Harmonic-Drive">Plastic Harmonic Drive Development</a>
+          <a class = "anchor" name="Plastic-Strain-Wave-Gearbox">a</a>
+          <a class = "heading" href = "#Plastic-Strain-Wave">Plastic Strain Wave Gearbox Development</a>
             <p>
-              Since June 2020, a friend and I have been working on making the worlds best plastic harmonic drive. We have experimented primarily with 3D printed prototypes, made of ABS, PLA, CF-impregnated-Nylon, and various photopolymers printed with several different SLA Printers.
-              Our current prototype is a zero-backlash gearbox weighing less than 100g, with output torque around 50 Nm. The tooth profiles are a new design, with a point-cloud computed specifically for maximum tooth contact on a harmonic drive.
+              Since June 2020, a friend and I have been working on making the worlds best plastic strain wave gearbox, designed for use in low cost robot arms. We have experimented primarily with 3D printed prototypes, made of ABS, PLA, CF-impregnated-Nylon, and various photopolymers printed with several different SLA Printers.
+              Our current prototype is a zero-backlash gearbox weighing less than 100g, with output failure torque around 70 Nm. The tooth profiles are a new design, with a point-cloud computed specifically for maximum tooth contact in a strain wave gearbox.
             </p>
             <div class="inline-object-small carousel-container">
               <a class="left disabled">&#10094;</a>
               <a class="right">&#10095;</a>
-              <div index = "0" class = "slide-container" max_index = "3">
+              <div index = "0" class = "slide-container" max_index = "4">
                 <div class = "slide">
-                  <img class = "slide-image" src = "{{url_for('static', filename='images/harmonic-drive-teeth-video.gif')}}">
+                  <img class = "slide-image" src = "{{url_for('static', filename='images/gearbox-photo.png')}}">
+                  <figcaption>A prototype gearbox. This particular gearbox has survived over 2000 hours of testing, and has a failure torque of 72 Nm.</figcaption>
+                </div>
+                <div class = "slide">
+                  <img class="slide-image" src = "{{url_for('static', filename='images/gearbox-render.png')}}">
+                  <figcaption>Cross section of the most current cad.</figcaption>
+                </div>
+                <div class = "slide">
+                  <img class = "slide-image" src = "{{url_for('static', filename='images/gearbox-teeth-video.gif')}}">
                   <figcaption>Tooth operation when turning the gearbox by hand (30x magnification).<br><br></figcaption>
                 </div>
                 <div class = "slide">
-                  <img class="slide-image" src = "{{url_for('static', filename='images/harmonic-drive-render.png')}}">
-                  <figcaption>Cross section of the most current cad. An off-the-shelf flexible ball bearing is not included here.</figcaption>
-                </div>
-                <div class = "slide">
-                  <img class = "slide-image" src = "{{url_for('static', filename='images/harmonic-drive-profiles.png')}}">
-                  <figcaption>Wave-generator, flex spline, and fixed spline teeth profiles, computed from desired ratio and gearbox OD.</figcaption>
+                  <img class = "slide-image" src = "{{url_for('static', filename='images/strain-wave-animation.gif')}}">
+                  <figcaption>Typical strain wave gearbox operation.<br><br></figcaption>
                 </div>
               </div>
             </div>
